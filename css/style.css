@@ -1,0 +1,1979 @@
+   
+
+
+
+    .navgation h1{
+        font-family: 'Scott', impact;
+        font-size: 30px;
+        white-space: nowrap;
+        color: #fff;
+        margin: auto;
+    }
+    
+
+    /*-----banner 開始------*/
+    .wrap-banner{
+        width: 100%;
+        background-size:1904px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .banner-index{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height:550px;
+        background:url('../images/background/bgc01.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat:repeat;
+        margin: auto;
+            /* lets clip it*/
+        -webkit-clip-path: url(#hero-clip);
+        clip-path: url(#hero-clip);
+        transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        overflow: hidden;
+    }
+    
+    
+    
+    .banner-index h1{
+        display: none;
+        position: relative;
+        left: 2%;
+        top: -8%;
+        font-family: 'Scott', impact;
+        z-index: 1;
+        font-size:112px;
+        color: #fff;
+    }
+    
+    
+    
+    .banner-index span:first-child {
+        font-family: 'Scott', impact;
+        margin-right: 160px;
+    }
+    
+        
+    .banner-index span:nth-child(2){
+        font-family: 'Scott', impact;
+    }
+
+    .banner-index img {
+        position: absolute;
+        top:70px;
+        z-index: 2;
+        width: 330px;
+        height: 400px;
+        transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    /*-----banner 結束------*/
+    
+    /*-----new-arrivals 開始------*/
+    .new-arrivals{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 50px auto;
+        height:750px;
+        background-color: #000;
+        border-radius: 5px;
+        box-shadow: 0 0 0 10px #f5f5f5, 3px 3px 12px 12px #333;
+        transition: all 1s ease;
+        overflow: hidden;
+    }
+    
+    .new-arrivals h2{
+        position: relative;
+        z-index: 3;
+        font-size: 40px;
+        margin-top: 65px;
+        padding: 20px 0;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .new-container{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        margin: auto;
+    }
+    
+    #space {
+        position: absolute;
+        left: 0;
+        background: #000000;
+        animation-name:sapce;
+        animation-iteration-count: infinite;
+        transform: rotate(0deg);
+        animation-duration: 1900s;
+    }
+    
+    @keyframes space{
+        0%{transform:rotate(0deg);}
+        100%{transform:rotate(36000deg);}  
+    }
+
+    
+ /*---new-arrivals carousel----*/
+        .carousel_wrap { 
+            height:360px;
+            position:relative;
+            margin-bottom:30px;
+        }
+
+        /*--water_whjeel_carousel--*/
+            #carousel img{ 
+                width:250px;
+            }
+            #carousel {
+                position:initial !important;
+                width:1200px;
+                margin:0px auto;
+                margin-top:50px;
+                height:350px;
+                clear:both;
+                overflow:hidden;
+            }
+
+            .square-box img:nth-child(1){
+                display: none;
+            }
+
+            .square-box img:nth-child(2){
+                transform: rotate(43deg);
+            }
+
+            #carousel > div {
+                visibility:hidden;
+                cursor:pointer;
+            }
+            #carousel .caption {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height:100%;
+                width:100%;
+            }
+
+
+            .carous_item { 
+                position:absolute;
+                height:100%;
+                width:100%;
+                padding:0px 15px;
+                box-sizing:border-box;
+                display:block;
+            }
+            .carous_desc { 
+                position:absolute;
+                display:block;
+                text-align:center;
+                font-size:14px;
+                height:100%;
+                font-weight:400;
+                line-height:16px;
+                padding:0px 15px;
+                padding-left:0px;
+                color:#8A8A8A;
+                margin-bottom:15px;
+                top:0px;
+            }
+
+            .carousel_wrap .nav_button { 
+                display:inline-block;
+                position:absolute;
+                left:0px;
+                top:50%;
+                z-index: 99;
+                margin-top:-30px;
+                height:45px;
+                width:45px;
+                right:0px;
+                font-size:40px;
+                font-weight:600;
+                border-radius: 50%;
+                color:#000;
+                cursor:pointer;
+                background: #fff;
+                background-position:center center;
+                background-repeat:no-repeat;
+                background-size:cover;
+                transition:all 0.3s ease;
+            }
+
+            .nav_button i {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                font-size: 23px;
+                color: #fff;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                text-align: center;
+                background-color: #000;
+                border: 2px solid #fff;
+                transition: all .8s ease-in-out;
+            }
+
+            .nav_button:hover i {
+                font-weight: 900;
+                color: #000;
+                background-color: #fff;
+                border: 2px solid #000;
+            }
+                
+            .carousel_wrap .nav_button.prev_button { 
+                left:34%;
+                transform: rotate(180deg)
+            }
+
+            .carousel_wrap .nav_button.next_button {
+                left: auto;
+                right: 34%;
+            }
+
+
+
+            .new-container .square-box{
+                transform: rotate(-43deg);
+                background: linear-gradient(170deg,rgba(0,0,0,.7),rgba(255,255,255,1));
+                transition: all 1s ease;
+            }
+
+            .new-container .square-box{
+                background-color: #f5f5f5;
+                box-shadow: 0px 3px 20px #333;
+            }
+
+            .square-box img{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                transition: all .8s ease-in-out;
+            }
+        /* 
+            .square-box:hover .caption img{
+                transform: scale(1.4) ;
+            } */
+
+            .new-container .square-box{
+                z-index:2;
+                width: 350px;
+                height: 350px;
+        
+            }
+    /*---new-arrivals carousel----*/
+/*-----new-arrivals 結束------*/
+
+/*-----shop 開始------*/
+    .shop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 95%;
+        height: 484px;
+        margin:auto;
+        
+    }
+    
+    .shop-title{
+        width: 150px;
+        margin: auto;
+    }
+    
+    .shop h2{
+ 
+        text-align: center;
+        color: #fff;
+    }
+    
+    .shop-item{
+        width: 33.333%;
+        background-color: #fff;
+        border-radius:5px;
+        box-shadow: 0px 3px 20px #333;
+        transition: all .5s ease;
+        animation:float .8s linear .3s infinite alternate;;
+        /* animation:name duration timing-function delay iteration-count direction fill-mode; */
+    }
+
+   
+    
+ /*---photos手機版---*/ 
+ .owl-carousel{
+    display: block !important;
+ }
+ .owl-prev {
+    background: url('https://res.cloudinary.com/milairagny/image/upload/v1487938188/left-arrow_rlxamy.png')center no-repeat;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    width:35px;
+    height:35px;
+    margin-top: -27px;
+    background-color: #000;
+    border-radius: 50%;
+    background-size: 50%;
+    box-shadow: 0 0 0 5px #f5f5f5, 3px 3px 12px 12px #333;
+    z-index: 1000;
+    cursor: pointer;
+    color: transparent;
+  }
+  
+  .owl-next {
+    background: url('https://res.cloudinary.com/milairagny/image/upload/v1487938220/right-arrow_zwe9sf.png') center no-repeat;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    width:35px;
+    height:35px;
+    margin-top: -27px;
+    background-color: #000;
+    border-radius: 50%;
+    background-size: 50%;
+    box-shadow: 0 0 0 5px #f5f5f5, 3px 3px 12px 12px #333;
+    z-index: 1000;
+    cursor: pointer;
+    color: transparent;
+}
+  
+  .owl-prev:hover,
+  .owl-next:hover {
+    opacity: 0.5;
+  }
+  
+  
+  /* Owl Carousel */
+  
+  
+  /* Popup Text */
+  
+  .white-popup-block {
+    background: #FFF;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
+  }
+  
+  .popuptext {
+    display: table;
+  }
+  .popuptext p {
+    margin-bottom: 10px;
+  }
+  .popuptext span {
+    font-weight: bold;
+    float: right;
+  }
+  /* Popup Text */
+  
+  /* Icon CSS */
+  .item {
+    position: relative;
+    background-color: #fff;
+  }
+  .item i {
+    display: none;
+    font-size: 4rem;
+    color: #FFF;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left:56%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .item a {
+    display: block;
+    width:106%;
+  }
+
+  /* .item a:hover:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 106%;
+    z-index: 1;
+  } */
+  .item a:hover i {
+    display: block;
+    z-index: 2;
+  }
+
+  /* .item a h3 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 45px;
+    color: #000;
+} */
+
+ /*---photos手機版---*/ 
+/*-----new-arrivals 結束------*/
+
+/*-----shop 開始------*/
+    .wrap-shop {
+        position: relative;
+        width: 100%;
+        height:600px;
+        background: linear-gradient(0deg,hsla(0,50%,0%,.5),hsla(0,50%,0%,.5)),url('../images/background/bgc02.jpg');
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        margin: auto;
+        background-attachment: fixed;
+    }
+
+  
+    .shop-title{
+        width: 150px;
+        margin: auto;
+    }
+    
+
+    
+    .shop .shop-container{
+        display:none;
+    }
+
+
+    .shop-container-mobile{
+        width: 100%;
+    }
+
+ 
+    .shop-item{
+        width:75%;
+
+    }
+
+    
+    @keyframes float{
+        0%{ top:99px;}
+        100%{top:105px;} 
+        }
+    
+    .shop-item:hover{
+        transform: scale(1.2);
+    }
+
+    .shop-item a h3{
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 45px;
+        color: #000;
+    }
+    
+    .shop-item a img{
+        width: 100%;
+    }
+
+    
+    
+.shirts a:before {
+    content: "SHIRTS";
+    position: absolute;
+    left:44%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+   
+  }
+
+  .shoes a:before {
+    content: "SHOES";
+    position: absolute;
+    left:44%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .accesory a:before {
+    content: "ACCEORY";
+    position: absolute;
+    left:44%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .pants a:before {
+    content: "PANTS";
+    position: absolute;
+    left:44%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .jacket a:before {
+    content: "JACKET";
+    position: absolute;
+    left:44%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .bag a:before {
+    content: "BAG";
+    position: absolute;
+    left:44%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .cap a:before {
+    content: "CAP";
+    position: absolute;
+    left:44%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+    
+    /*-----shop 結束------*/
+    
+    
+    /*-----news 開始------*/
+    .news{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width:100%;
+        margin:auto;
+        border-radius: 5px;
+        background-color: #eee;
+    }
+    
+    .news-title{
+        margin: auto;
+    }
+    
+    .news h2{
+        top: 100px;
+        color: #000;
+    }
+    
+    .news-container{
+        margin:auto;
+        /* box-shadow: 0 0 0 10px #f5f5f5, 3px 3px 12px 12px #333; */
+        transition: all .3s ease;
+    }
+    
+    .news-item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        position: relative;
+        flex:50%;
+        height:62%;
+        margin-bottom: 10%;
+            box-shadow: 0 0 0 10px #f5f5f5, 3px 3px 12px 12px #333;
+        background-repeat:no-repeat; 
+        box-shadow: 0 0 0 10px #f5f5f5, 3px 3px 12px 12px #333;
+    }
+    
+    
+    .news-item img{
+        width: 200px;
+        height: 282px;
+    }
+    
+    .news-text{
+       width: 100%;
+    }
+    
+    .news-item h3{
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 30px;
+        text-align: center;
+        padding:20px;
+        border:1px solid rgb(177, 177, 177);
+        background-color: #fff;
+    }
+    
+    .news-item p{
+        letter-spacing: normal;
+        color: #fff;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: rgb(78, 77, 77);
+        box-shadow: 0px 3px 20px #333;
+    }
+
+     .news-item:nth-of-type(1){
+        position: relative;
+    }
+    
+    .news-item:nth-of-type(2){
+        position: relative;
+    }
+    
+    .news-item:nth-of-type(3){
+        position: relative;
+    }
+    
+        
+    .news-item:nth-of-type(4){
+        position: relative;    
+    }
+
+ 
+     
+
+    /*-----show 開始------*/
+    .wrap-show{
+        width: 100%;
+        background-color: #000;
+    }
+    
+    
+    .show-title{
+        margin: auto;
+    }
+    
+    .show h2{
+        top: 100px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .show-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:95%;
+        margin: auto;
+        background-color: #000;
+        overflow: hidden;
+    }
+    
+    .show-video{
+        display: flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        width: 95%;
+        margin: auto;
+    }
+    
+    .show-video img{
+        width: 600px;
+        height:402px;
+    }
+    
+    .show-video iframe{
+        width: 100%;
+        height:300px;
+    }
+    
+    .show-text{
+        width:100%; 
+    }
+    
+    .show-text h2{
+        color: #000;
+        font-size: 30px;
+        text-align: center;
+        padding:50px 20px;
+        border:1px solid #000;
+        background-color: #f5f5f5;
+    }
+    
+    .show-text p{
+        /* font-size: 15px; */
+        color: #fff;
+        padding: 35px;
+        text-align: center;
+    }
+    
+    
+    .show-video .show-btn:hover{
+        margin: auto;
+        padding: 5px 40px;
+        font-size: 20px;
+        color: #000;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    
+    .show-pic{
+        display: none;
+
+    }
+    /*-----show 結束------*/
+    
+    /*-----instagram 開始------*/
+    
+    .instagram{
+        position: relative;
+        width:100%;
+        margin:auto;
+        background: url(../images/background/bgc06.jpg);
+        background-attachment: fixed;
+    }
+    
+    .instagram-container{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        height:100%;
+        margin:auto;
+        box-shadow: 0px 3px 20px #333;
+        transition: all 1s ease;
+        
+    }
+    
+    
+    .instagram-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height: 150px;
+        margin: auto;
+    }
+    
+    .instagram-title h2{
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        background-color: #000;
+        box-shadow: 3px 2px 30px #fff;
+    }
+
+    
+    /* .instagram-pic{
+        display:block;
+        background-color: #fff;
+        box-shadow: 0px 3px 20px #333;
+    } */
+
+    .instagram-pic{
+        display: none;
+    }
+
+    .instagram-pic-mobile{
+        display:block;
+    }
+
+
+    .ig01{
+        background: url(../images/index/instagram/purege06.jpg);
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .ig02{
+        background: url(../images/index/instagram/pure99.jpg);
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    
+    .ig03{
+        background: url(../images/index/instagram/lovely02.jpg);
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    
+    .ig04{
+        background: url(../images/index/instagram/instagram22.jpg);
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    
+    .ig05{
+        background: url(../images/index/instagram/instagram21.jpg); 
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .ig06{
+        background: url(../images/index/instagram/instagram28.jpg);
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    
+    .ig07{
+        background: url(../images/show/photos08.jpg); 
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    
+    .ig08{
+        background: url(../images/index/instagram/instagram25.jpg); 
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    
+    .ig09{
+        background: url(../images/show/photos23.jpg); 
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .instagram-pic .col-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 3;
+    }
+    
+    .instagram-pic .col-3 a img{
+        width:100%;
+        margin: auto;
+    }
+    
+    .instagram-pic .col-3 a:hover img{
+        filter: hue-rotate(359deg);
+        animation:rainbow 2.8s linear infinite;
+    } 
+
+    
+    @keyframes rainbow{
+        0%{filter: hue-rotate(0deg);}
+        100%{filter: hue-rotate(359deg);}
+    }
+    
+
+    .white-space{
+        /* width: 1200px; */
+        height:25px;
+        margin: auto;
+        background-color: #eee;
+    }
+
+    
+    /*-----instagram 結束------*/
+
+@media screen and (min-width:473px){
+    /*-----banner 開始------*/
+    .wrap-banner{
+        width: 100%;
+        background-size:1904px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .banner-index{
+        height:690px;
+        -webkit-clip-path: url(#hero-clip);
+        clip-path: url(#hero-clip);
+    }
+    
+    .banner-index h1{
+        display: block;
+        top:-100%;
+    }
+    
+    .banner-index span:first-child {
+        margin-right: 160px;
+    }
+    
+    .banner-index img{
+        top: 140px;
+        transform: scale(1.2);
+    }
+    
+    .shop-item{
+        width:35%;
+    }
+
+    .instagram-pic{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .instagram-pic-mobile{
+        display: none;
+    }
+
+    .carousel_wrap .nav_button.prev_button {
+        left: 33%;
+    }
+
+    .carousel_wrap .nav_button.next_button {
+        left: auto;
+        right: 34%;
+    }
+
+    
+.shirts a:before {
+    content: "SHIRTS";
+    position: absolute;
+    left:38%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+   
+  }
+
+  .shoes a:before {
+    content: "SHOES";
+    position: absolute;
+    left:38%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .accesory a:before {
+    content: "ACCEORY";
+    position: absolute;
+    left:38%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .pants a:before {
+    content: "PANTS";
+    position: absolute;
+    left:38%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .jacket a:before {
+    content: "JACKET";
+    position: absolute;
+    left:38%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .bag a:before {
+    content: "BAG";
+    position: absolute;
+    left:38%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+  .cap a:before {
+    content: "CAP";
+    position: absolute;
+    left:38%;
+    bottom:3%;
+    z-index: 1;
+    font-size:25px;
+    font-weight: 900;
+    line-height: 30px;
+    padding-top: 45px;
+    color: #000;
+  }
+
+}
+
+@media screen and (min-width:768px){
+    .navgation h1{
+        display: none;
+    }
+    /*-----banner 開始------*/
+    .wrap-banner{
+        width: 100%;
+        background-size:1904px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .banner-index{
+        height: 610px;
+    }
+    
+    .banner-index h1{
+        top: -6vh;
+        left: 2vw;
+        font-size: 120px;
+    }
+    
+    .banner-index span:first-child {
+        margin-right:15%;
+    }
+    
+
+    .banner-index img{
+        transform: scale(1);
+        top: 108px;
+    }
+    
+    
+    /*-----banner 結束------*/
+    
+    /*-----new-arrivals 開始------*/
+    .new-arrivals{
+        height: 800px;
+        border-radius: 100% 111% 84% 127% /142% 133% 81% 75%;
+    }
+
+    .new-container{
+        width: 950px;
+        margin-top: 140px;
+    }
+
+    .new-container .square-box:hover{
+        transform: scale(1.3) rotate(0deg);
+        background: url(../images/index/stage03.jpg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .new-container{
+        width:93%;
+    }
+
+    .carousel_wrap .nav_button.prev_button {
+        left: 21%;
+    }
+
+    .carousel_wrap .nav_button.next_button {
+        left: auto;
+        right:21%;
+    }
+    
+    .instagram-pic .col-3:nth-of-type(3) a:nth-of-type(3) img{
+        height:initial;
+        margin: auto;
+    }
+
+
+    .square-box img:first-child{
+        /* opacity:0; */
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: all .8s ease-in-out;
+    }
+
+    .square-box:hover img:first-child{
+        /* opacity:1; */
+        display: block;
+        transform: scale(3) ;
+    }
+
+
+
+    .square-box img:nth-child(2){
+        transform: rotate(43deg) scale(1.2) translate(8px,-36px);
+    }
+
+    .square-box:hover img:nth-child(2){
+        display: none;
+    }
+
+  
+    .news-item:nth-of-type(1){
+        position: relative;
+        left:15%;
+    }
+    
+    .news-item:nth-of-type(2){
+        position: relative;;
+        right:15%;
+    }
+
+        
+    .news-item:nth-of-type(4){
+        position: relative;
+        right: 15%;
+    }
+
+    /*-----new-arrivals 結束------*/
+    
+
+    /*-----shop 開始------*/
+    .shop-item a h3 {
+        font-size: 20px;
+    }
+
+    
+    /*-----shop 結束------*/
+
+
+    /*-----news 開始------*/
+    .news{
+        height:1800px;
+    }
+    
+    .news-title{
+        width: 150px;
+        margin: auto;
+    }
+
+    
+    .news-container{
+        height: 1800px;
+
+    }
+    
+    .news-item{
+        width: 482px;
+        height: 348px;
+
+    }
+    
+    .news-item img{
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 200px;
+        height: 282px;
+    }
+    
+    .news-text{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width:300px;
+    }
+    
+    .news-item .position-btn{
+        position: absolute;
+        bottom:18px;
+        left: 160px;
+    }
+    
+    /*-----show 開始------*/
+    
+    .show-title{
+        width: 150px;
+        margin: auto;
+    }
+ 
+    .show-video{
+        flex-direction: row;
+    }
+    
+    .show-video iframe{
+        width: 800px;
+        height: 500px;
+    }
+    
+    .show-text{
+        width: 400px;
+        height: 600px;
+    }
+
+    .show-pic{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+    }
+    
+    .show-pic img{
+        height: 150px;
+        transition: all 2s ease;
+    }
+    
+    .align-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+    }
+    
+    /*-----show 結束------*/
+    
+    /*-----instagram 開始------*/
+    .instagram-pic{
+        right: 65px;
+        bottom: -64px;
+    }
+
+    .instagram-pic-mobile{
+        display: none;
+    }
+    /*-----instagram 結束------*/
+
+}
+
+
+@media screen and (min-width:960px){
+    /*-----banner 開始------*/
+    .banner-index{
+        height:670px;
+    }
+    
+    .banner-index h1{
+        top: -6vh;
+        left: 3vw;
+        font-size: 150px;
+    }
+    
+    .banner-index span:first-child {
+        margin-right:130px;
+    }
+    
+
+    /* .banner-index img{
+        transition: all .5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    } */
+    /*-----banner 結束------*/
+    
+    /*-----new-arrivals 開始------*/ 
+    .new-container{
+        width:95%;
+    }
+/*-----new-arrivals 結束------*/
+
+/*-----shop 開始------*/
+
+    .wrap-shop {
+        height: 835px;
+        overflow: hidden;
+    }
+    
+
+    .shop-item{
+        width: 14.13333%;
+    }
+
+    .shop h2{
+        top:15%;
+    }
+
+    
+    .shop-container-mobile{
+        display: none;
+    }
+
+
+    .shop .shop-container{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 202px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 484px;
+        margin:auto;
+    }
+
+    .instagram-pic-mobile{
+        display: none;
+    }
+    
+    @keyframes float{
+        0%{ top:99px;}
+        100%{top:105px;} 
+        }
+    
+    /*-----shop 結束------*/
+    
+
+    /*-----news 開始------*/
+    .news{
+        height:1800px;
+    }
+    
+
+    .news-container{
+        height: 1800px;
+        box-shadow: 0 0 0 10px #f5f5f5, 3px 3px 12px 12px #333;
+    }
+    
+    .news-item{
+        width: 482px;
+        height: 348px;
+    }
+    
+    .news-item:nth-of-type(1){
+        position: relative;
+        left:-45%;
+    }
+    
+    .news-item:nth-of-type(2){
+        position: relative;;
+        right:-45%;
+    }
+    
+    .news-item:nth-of-type(3){
+        position: relative;
+        right: 45%;
+    }
+    
+        
+    .news-item:nth-of-type(4){
+        position: relative;
+        left:45%;
+    }
+     
+    .news-item img{
+        position: absolute;
+        top: -10px;
+        left: -10px;
+    }
+    
+    .news-text{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width:300px;
+    }
+    
+    .news-item .position-btn{
+        bottom:18px;
+        left: 160px;
+    }
+
+    /*-----show 開始------*/
+    .show-video iframe{
+        width: 800px;
+        height: 500px;
+    }
+    
+    .show-text{
+        width: 400px;
+        height: 600px;
+    }
+
+    .show-pic{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+    }
+    
+    .show-pic img{
+        width: 11.3%;
+        height: 150px;
+        transition: all 2s ease;
+    }
+    /*-----show 結束------*/
+    
+    /*-----instagram 開始------*/  
+    .instagram-pic{
+        right: 65px;
+        bottom: -64px;
+    }
+
+    .instagram-pic .col-3:nth-of-type(1) a:nth-of-type(3) img {
+        /* height:285px; */
+    }
+
+    .instagram-pic .col-3:nth-of-type(2) a:nth-of-type(3) img {
+        /* height:initial; */
+    }
+
+
+    .instagram-pic .col-3:nth-of-type(3) a:nth-of-type(3) img {
+        /* height:305px; */
+        margin: auto;
+
+        
+    /*-----instagram 結束------*/  
+
+}
+
+@media screen and (min-width:1200px){
+/*-----banner 開始------*/
+    .banner-index{
+        height:900px;
+    }
+
+    .banner-index h1{
+        top: -7vh;
+        left: 40px;
+        font-size:195px;
+    }
+
+    .banner-index span:first-child {
+        margin-right: 215px;
+    }
+
+    .banner-index img{
+        transform: scale(1.5);
+        top: 250px;
+    }
+    /*-----banner 結束------*/
+
+    /*-----new-arrivals 開始------*/
+    .new-arrivals{
+        width:1100px;
+    }
+
+    .carousel_wrap .nav_button.next_button {    
+        left:auto;
+        right:50px;
+    }
+
+    .carousel_wrap .nav_button.prev_button {
+        left: 55px;
+    }
+
+    .news-item:nth-of-type(1){
+        position: relative;
+        left:-45%;
+    }
+    
+    .news-item:nth-of-type(2){
+        position: relative;;
+        right:-45%;
+    }
+    
+    .news-item:nth-of-type(3){
+        position: relative;
+        right: 45%;
+    }
+    
+        
+    .news-item:nth-of-type(4){
+        position: relative;
+        left:45%;
+    }
+    
+    /*-----new-arrivals 結束------*/
+
+    /*-----shop 開始------*/
+
+    .wrap-shop {
+        height: 835px;
+        /* lets clip it*/
+        -webkit-clip-path: url(#hero-clip);
+        clip-path: url(#hero-clip);
+        -webkit-clip-path: polygon(-151% 35%, 100% 0% ,120% 105%);
+    }
+
+
+    .shop{
+        width: 1100px;
+        height: 484px;
+    }
+
+    .shop .shop-container{
+        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 202px;
+        left: 0;
+        right: 0;
+        width: 1100px;
+        height: 484px;
+        margin:auto;
+    }
+
+
+    .shop-item a h3 {
+        font-size:30px;
+    }
+
+
+    .shop-item{
+        position: relative;
+        width: 200px;
+        height: 300px;
+        background-color: #fff;
+        border-radius:5px;
+        box-shadow: 0px 3px 20px #333;
+        transition: all .5s ease;
+        animation:float .8s linear 1s infinite alternate;;
+        /* animation:name duration timing-function delay iteration-count direction fill-mode; */
+    }
+
+
+    @keyframes float{
+        0%{ top:99px;}
+        100%{top:105px;} 
+        }
+
+    .shop-item:nth-child(1){
+        position: absolute;
+        top:103px;
+        right:465px;
+        width: 200px;
+        height: 300px;
+    }
+    
+
+    .shop-item:nth-child(2){
+        position: absolute;
+        top:101px;
+        left: 640px;
+        z-index: 3;
+        height: 282px;
+        transform: translateZ(0px)rotatex(8deg) rotateY(-41deg);
+    }
+    
+    .shop-item:nth-child(2):hover{
+        transform: scale(1);
+    }
+
+    
+    .shop-item:nth-child(3):hover{
+        transform: scale(1);
+    }
+
+    
+    .shop-item:nth-child(4):hover{
+        transform: scale(1);
+    }
+
+    
+    .shop-item:nth-child(5):hover{
+        transform: scale(1);
+    }
+
+    
+    .shop-item:nth-child(6):hover{
+        transform: scale(1);
+    }
+
+    
+    .shop-item:nth-child(7):hover{
+        transform: scale(1);
+    }
+
+    
+    .shop-item:nth-child(8):hover{
+        transform: scale(1);
+    }
+
+
+
+    .shop-item:nth-child(3){
+        position: absolute;
+        top: 90px;
+        left: 793px;
+        z-index: 2;
+        width: 196px;
+        height: 255px;
+        transform: translateZ(0px)rotatex(14deg) rotateY(-56deg);
+    }
+
+    .shop-item:nth-child(2):hover{
+        transform: scale(1);
+    }
+
+
+    .shop-item:nth-child(4){
+            position: absolute;
+            top: 49px;
+            left: 906px;
+            width: 198px;
+            height: 235px;
+            position: absolute;
+            top: 46px;
+            left: 901px;
+            width: 198px;
+            height: 235px;
+            transform: translateZ(0px)rotatex(21deg) rotateY(-67deg);
+        }
+
+    .shop-item:nth-child(5){
+        position: absolute;
+        top: 41px;
+        left: 1px;
+        width: 198px;
+        height: 235px;
+        transform: translateZ(0px)rotatex(-11deg) rotateY(-66deg);
+        
+    }
+
+    .shop-item:nth-of-type(5) img,  .shop-item:nth-of-type(4) img{
+        height:130px;
+    }
+
+
+    .shop-item:nth-child(6){
+        position: absolute;
+        top: 96px;
+        left: 243px;
+        z-index:2;
+        height: 282px;
+        transform: translateZ(0px)rotatex(-12deg) rotateY(-50deg);
+    }
+
+    .shop-item:nth-child(7){
+        position: absolute;
+        top: 73px;
+        left: 109px;
+        width: 196px;
+        height: 255px;
+        transform: translateZ(0px)rotatex(-12deg) rotateY(-58deg);
+    }
+
+    .shop-item:nth-of-type(6) img{
+        height: 165px;
+    }
+
+    .shop-item:nth-of-type(7) img{
+        height:136px;
+    }
+
+    .shop-item:nth-of-type(3) img{
+        height: 180px;
+    }
+
+    .shop-item:nth-child(8){
+        position: absolute;
+        top:100px;
+        left:0px;
+        transform: translateZ(0px)rotatex(-12deg) rotateY(-50deg);
+    }
+
+    .shop-container-mobile{
+        display: none;
+    }
+
+    .instagram-pic-mobile{
+        display: none;
+    }
+    /*-----shop 結束------*/
+
+
+    /*-----news 開始------*/
+    .news{
+        width:1100px;
+        height:1130px;
+    }
+
+    .news-title{
+        width: 150px;
+    }
+
+    .news-container{
+        position: relative;
+        width:1100px;
+        margin:auto;
+        height: 1000px;
+    }
+
+    .news-item{
+        justify-content: flex-start;
+        width:500px;
+        height: 300px;
+    }
+
+    .news-item:nth-of-type(1){
+        position: absolute;
+        top:190px;
+        left:-100px;
+
+    }
+
+    .news-item:nth-of-type(2){
+        position: absolute;
+        top:120px;
+        right:-100px;
+    }
+
+    .news-item:nth-of-type(3){
+        position: absolute;
+        bottom:90px;
+        right:-100px;
+    }
+
+    .news-item:nth-of-type(4){
+        position: absolute;
+        bottom:-10px;
+        left:-100px;
+    }
+
+    
+    .fade-left{
+        position: relative;
+        left:-9px !important;
+        transition: all 1s ease;
+    }
+
+
+    .fade-right{
+        position: relative;
+        right:-9px !important;
+        transition: all 1s ease; 
+    }
+
+
+
+    /* .scroll-left01{
+        position: absolute;
+        top:190px;
+        left:-9px;
+
+    }
+
+    .scroll-right02{
+        position: absolute;
+        top:120px;
+        right:-9px;
+    }
+
+    .scroll-right03{
+        position: absolute;
+        bottom:90px;
+        right:9px;
+    }
+
+    .scroll-left04{
+        position: absolute;
+        bottom:-10px;
+        left:-9px;
+    } */
+
+
+    
+    .news-item img{
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 200px;
+        height: 291px;
+    }
+
+    .news-text{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width:300px;
+    }
+
+
+    .news-item .position-btn{
+        bottom:-34px;
+        left: 160px;
+    }
+    /*-----news 結束------*/
+
+
+    /*-----show 開始------*/
+    .show-container{
+        width:1100px;
+    }
+
+    .show-video{
+        width: 1100px;
+    }
+
+
+    .show-video iframe{
+        width: 800px;
+        height: 500px;
+    }
+
+    .show-text{
+        width:25%;
+        height: 600px;
+    
+    }
+
+
+    .show-pic{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:1100px;
+        margin: auto;
+    }
+
+    .show-pic img{
+        width: 11.5%;
+        height: 200px;
+        transition: all 2s ease;
+    }
+
+
+    /*-----show 結束------*/
+
+    /*-----instagram 開始------*/
+    .instagram{
+        height:760px;
+    }
+
+    .instagram-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 160px;
+        left: 0;
+        right: 0;
+        width:1100px;
+        height: 500px;
+        margin:auto;
+        background-color: #000;
+        box-shadow: 0px 3px 20px #333;
+        transition: all .3s ease;
+    }
+
+    .instagram-title{
+        width:490px;
+        height: 100px;
+    }
+
+    .instagram-title h2{
+        position: absolute;
+        text-align: center;
+        color: #fff;
+    }
+
+    .space{
+        width:1400px;
+        height: 300px;
+    }
+
+    .instagram-pic{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        position: absolute;
+        right: 65px;
+        top:-150px;
+        background-color: #fff;
+    }
+
+    .instagram-pic .col-3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+
+
+
+    .black{
+        display: none;
+    }
+
+
+    .white-space{
+        width:100%;
+        height:125px;
+        margin: auto;
+        background-color: #eee;
+    }
+ /*-----instagram 結束------*/
+}
+}

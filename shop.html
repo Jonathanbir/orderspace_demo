@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SHOP</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font -->
+	<link rel="stylesheet" href="../font/Starjedi_0.ttf">
+	<link rel="stylesheet" href="../font/Starjhol.ttf">
+	<link rel="stylesheet" href="../font/AdobeArabic-Regular.otf">
+    <link rel="stylesheet" href="../font/Scott.TTF">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <!-- JQ/JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script rel="stylesheet" src="js/common.js"></script>
+    <script rel="stylesheet" src="js/all.js"></script>
+</head>
+<body>
+<!-- 燈箱：登入 -->
+<div id="lightBox" style="display:none">
+    <table border="1" align="center" cellspacing="0" id="tableLogin">
+    <tr><td>MemberID</td><td><input type="text" name="memId" id="memId"></td></tr>
+    <tr><td>Password</td><td><input type="password" name="memPsw" id="memPsw"></td></tr>
+    <tr><td colspan="2" align="center">
+            <input type="button" id="btnLogin" value="sign">
+        <input type="button" id="btnLoginCancel" value="cancel">
+        </td></tr>
+    </table>
+</div>
+<!--navagation 開始 -->
+<header>
+    <div class="navgation">
+        <div class="navgation-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo-web.svg" alt="">
+            </a>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="shop.html"">SH0P</a></li>                        
+                        <li><a href="show.html">SH0W</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="brand.html">BRAND</a></li>
+                        <li><a href="#" class="contactdown">C0NTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="member-bar">
+                    <span id="memName">&nbsp;</span>
+                    <span id="spanLogin">
+                        <i class="fa fa-user-o"></i>
+                    </span>						
+                    <a href="#" type="button" name="btn" value="10+20=?[0]" onClick="buyCar();">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <div class="line middle"></div>
+                    <div class="line top"></div>
+                    <div class="line bottom"></div>
+                </div>
+                <nav class="nav-mobile">
+                    <ul>
+                        <li><a href="shop.html">SH0P</a></li>
+                        <li><a href="show.html">SH0W</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="brand.html">BRAND</a></li>
+                        <li><a href="#">C0NTACT</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+</header>
+<!--navagation 結束 -->   
+
+<!-- banner 開始 -->
+	<div class="wrap">
+        <section class="banner banner-page">
+            <h1>SHOP</h1>
+            <i class="fa fa-angle-double-down pagedown"></i>
+        </section>
+    </div>
+<!-- banner 結束 -->
+<!-- nav 開始 -->
+    <section class="nav" id="next_page">
+        <ul>
+            <li class="nav_btn activeColor" style="background: rgb(10, 10, 77);">New Arrivals</li>
+            <li class="nav_btn">Product</li>
+            <li class="nav_btn">Information</li>
+        </ul>
+            <div class="content">
+                <div class="wrap wrap-new">
+                    <section id="bg2" class="new-arrivals">
+                        <div class="arrow-img-up">
+                            
+                        </div>
+                        <!-- <a class="pageupto-1"></a> -->
+                        <h2>NEW ARRIALS</h2>
+                        <div class="new-arrivals-region">
+                        <div>
+                    <!--         
+                                <div class="box"></div> -->
+                           <input checked id="one" name="multiples" type="radio" value="1">
+                           <label for="one" class="l1"><i class="fa fa-star-o"></i></label>
+                    
+                           <input id="two" name="multiples" type="radio" value="2">
+                           <label for="two" class="l2"><i class="fa fa-star-o"></i></i></label>
+                    
+                           <input id="three" name="multiples" type="radio" value="3">
+                           <label for="three"><i class="fa fa-star-o"></i></label>
+                    
+                           <input id="four" name="multiples" type="radio" value="4">
+                           <label for="four"><i class="fa fa-star-o"></i></label>
+                    
+                           <input id="five" name="multiples" type="radio" value="5">
+                           <label for="five"><i class="fa fa-star-o"></i></label>
+                    
+                           <input id="six" name="multiples" type="radio" value="6">
+                           <label for="six"><i class="fa fa-star-o"></i></label>
+                    
+                           <input id="seven" name="multiples" type="radio" value="7">
+                           <label for="seven"><i class="fa fa-star-o"></i></label>
+                    
+                           <input id="eight" name="multiples" type="radio" value="8">
+                           <label for="eight"><i class="fa fa-star-o"></i></label>
+                    
+                           <input id="one" name="multiples" type="radio" value="8">
+                           <label for="one"><i class="fa fa-star-o"></i></label>  
+                           
+                           <input id="ten""" name="multiples" type="radio" value="8">
+                           <label for="four"><i class="fa fa-star-o"></i></label> 
+                           
+                           <input id="three"" name="multiples" type="radio" value="8">
+                           <label for="three"><i class="fa fa-star-o"></i></i></label>     
+                           
+                           <input id="two" name="multiples" type="radio" value="8">
+                           <label for="two"><i class="fa fa-star-o"></i></label>  
+                      
+                                  
+                           <input id="fourteen"" name="multiples" type="radio" value="8">
+                           <label for="six"><i class="fa fa-star-o"></i></i></label>    
+                    
+                           <input id="eight" name="multiples" type="radio" value="8">
+                           <label for="eight" class="l14"><i class="fa fa-star-o"></i></label> 
+                    
+                           <div class="container">
+                               <div class="carousel">
+                        <div class="carousel-region">
+                                    <img class="first-pic" src="images/shop/new-arrival/new-arrival01.JPG" alt="">
+                                    <div class="new-arrival-content">
+                                        <h3>MADNESS</h3>
+                                        <span>PULLOVER JACKET</span>
+                                        <p>NTD $2749.00</p>
+                                        <div class="size-box">
+                                            <span>size</span>
+                                            <select name="size">
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                                <option value="l">L</option>
+                                                <option value="xl">XL</option>
+                                            </select>
+                                        </div>
+                                        <div class="amount-box">
+                                            <span>amount</span>
+                                            <select name="amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                        
+                                        <a href="#" class="buy-button"><p>BUY NOW</p></a>
+                                    </div>
+                                    <div class="three-pics">
+                                        <img src="images/shop/new-arrival/new-arrival01-1.JPG">
+                                        <img src="images/shop/new-arrival/new-arrival01-2.jpg">
+                                        <img src="images/shop/new-arrival/new-arrival01-3.JPG">
+                                    </div>
+                                </div>
+                    <div class="carousel-region mb">
+                                    <img class="first-pic" src="images/shop/new-arrival/new-arrival02.jpg" alt="">
+                                    <div class="new-arrival-content" style="right:7px;">
+                                        <h3>MDNS</h3>
+                                        <span>WINDSTOPPER PARKA</span>
+                                        <p>NTD $3590.00</p>
+                                        <div class="size-box">
+                                            <span>size</span>
+                                            <select name="size">
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                                <option value="l">L</option>
+                                                <option value="xl">XL</option>
+                                            </select>
+                                        </div>
+                                        <div class="amount-box">
+                                            <span>amount</span>
+                                            <select name="amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                        
+                                        <a href="#" class="buy-button"><p>BUY NOW</p></a>
+                                    </div>
+                                    <div class="three-pics">
+                                        <img src="images/shop/new-arrival/new-arrival02-1.JPG">
+                                        <img src="images/shop/new-arrival/new-arrival02-2.jpg">
+                                        <img src="images/shop/new-arrival/new-arrival02-3.JPG">
+                                    </div>
+                                </div>
+                    <div class="carousel-region mb">
+                                    <img class="first-pic" src="images/shop/new-arrival/new-arrival03.jpg" alt="">
+                                    <div class="new-arrival-content">
+                                        <h3>SPACE-JACKET</h3>
+                                        <span>POCKET TEE</span>
+                                        <p>NTD $1590.00</p>
+                                        <div class="size-box">
+                                            <span>size</span>
+                                            <select name="size">
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                                <option value="l">L</option>
+                                                <option value="xl">XL</option>
+                                            </select>
+                                        </div>
+                                        <div class="amount-box">
+                                            <span>amount</span>
+                                            <select name="amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                        
+                                        <a href="#" class="buy-button"><p>BUY NOW</p></a>
+                                    </div>
+                                    <div class="three-pics">
+                                        <img src="images/shop/new-arrival/new-arrival03-1.JPG">
+                                        <img src="images/shop/new-arrival/new-arrival03-2.jpg">
+                                        <img src="images/shop/new-arrival/new-arrival03-3.JPG">
+                                    </div>
+                                </div>
+                                <div class="carousel-region mb">
+                                    <img class="first-pic" src="images/shop/new-arrival/new-arrival04.jpg" alt="">
+                                    <div class="new-arrival-content">
+                                        <h3>PANTS</h3>
+                                        <span>Long pants</span>
+                                        <p>NTD $1680.00</p>
+                                        <div class="size-box">
+                                            <span>size</span>
+                                            <select name="size">
+                                                <option value="s">S</option>
+                                                <option value="m">M</option>
+                                                <option value="l">L</option>
+                                                <option value="xl">XL</option>
+                                            </select>
+                                        </div>
+                                        <div class="amount-box">
+                                            <span>amount</span>
+                                            <select name="amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                        
+                                        <a href="#" class="buy-button"><p>BUY NOW</p></a>
+                                    </div>
+                                    <div class="three-pics">
+                                        <img src="images/shop/new-arrival/new-arrival04-1.JPG">
+                                        <img src="images/shop/new-arrival/new-arrival04-2.jpg">
+                                        <img src="images/shop/new-arrival/new-arrival04-3.JPG">
+                                    </div>
+                                </div>
+                                <div class="carousel-region mb">
+                                    <img class="first-pic" src="images/shop/new-arrival/new-arrival05.jpg" alt="">
+                                    <div class="new-arrival-content">
+                                        <h3>SCANDLES</h3>
+                                        <span> UNIVERSAL SANDALS</span>
+                                        <p>NTD $1980.00</p>
+                                        <div class="size-box">
+                                            <span>size</span>
+                                            <select name="size">
+                                                <option value="s">US7</option>
+                                                <option value="s">US7.5</option>
+                                                <option value="m">US8</option>
+                                                <option value="s">US8.5</option>
+                                                <option value="l">US9</option>
+                                                <option value="s">US9.5</option>
+                                                <option value="xl">US10</option><option value="s">US10.5</option>
+                                            </select>
+                                        </div>
+                                        <div class="amount-box">
+                                            <span>amount</span>
+                                            <select name="amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                        
+                                        <a href="#" class="buy-button"><p>BUY NOW</p></a>
+                                    </div>
+                                    <div class="three-pics">
+                                        <img src="images/shop/new-arrival/new-arrival05-1.JPG">
+                                        <img src="images/shop/new-arrival/new-arrival05-2.jpg">
+                                        <img src="images/shop/new-arrival/new-arrival05-3.JPG">
+                                    </div>
+                                </div>
+                                <div class="carousel-region mb">
+                                    <img class="first-pic" src="images/shop/new-arrival/new-arrival06.JPG" alt="" style="width:245px;height:300px;">
+                                    <div class="new-arrival-content" style="right:2%;top:4%;">
+                                        <h3>MDNS</h3>
+                                        <span>ANNIVERSARY PACK SOCKS</span>
+                                        <p>NTD $490.00</p>
+                                        <div class="size-box">
+                                            <span>size</span>
+                                            <select name="size">
+                                                <option value="s">20-25cm</option>
+                                                <option value="m">25-30cm</option>
+                                                <option value="l">30-35cm</option>
+                                                <option value="xl">35-40cm</option>
+                                            </select>
+                                        </div>
+                                        <div class="amount-box">
+                                            <span>amount</span>
+                                            <select name="amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                        
+                                        <a href="#" class="buy-button"><p>BUY NOW</p></a>
+                                    </div>
+                                    <div class="three-pics">
+                                        <img src="images/shop/new-arrival/new-arrival06-1.JPG">
+                                        <img src="images/shop/new-arrival/new-arrival06-2.jpg">
+                                        <img src="images/shop/new-arrival/new-arrival06-3.JPG">
+                                    </div>
+                                </div>
+                                <div class="carousel-region mb">
+                                    <img class="first-pic" src="images/shop/new-arrival/new-arrival07.jpg" alt="">
+                                    <div class="new-arrival-content">
+                                        <h3>G-SHOCK</h3>
+                                        <span>DW-5000MD</span>
+                                        <p>NTD $3780.00</p>
+                                        <div class="size-box">
+                                            <span>size</span>
+                                            <select name="size">
+                                                <option value="s">-</option>
+                                            </select>
+                                        </div>
+                                        <div class="amount-box">
+                                            <span>amount</span>
+                                            <select name="amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                        
+                                        <a href="#" class="buy-button"><p>BUY NOW</p></a>
+                                    </div>
+                                    <div class="three-pics">
+                                        <img src="images/shop/new-arrival/new-arrival07-1.JPG">
+                                        <img src="images/shop/new-arrival/new-arrival07-2.jpg">
+                                        <img src="images/shop/new-arrival/new-arrival07-3.JPG">
+                                    </div>
+                                </div>
+                                <div class="carousel-region mb">
+                                    <img class="first-pic" src="images/shop/new-arrival/new-arrival08.jpg" alt="">
+                                    <div class="new-arrival-content">
+                                        <h3>Agens.b</h3>
+                                        <span>CORDURA DAY PACK</span>
+                                        <p>NTD $999.00</p>
+                                        <div class="size-box">
+                                            <span>size</span>
+                                            <select name="size">
+                                                <option value="m">-</option>
+                                            </select>
+                                        </div>
+                                        <div class="amount-box">
+                                            <span>amount</span>
+                                            <select name="amount">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                        
+                                        <a href="#" class="buy-button"><p>BUY NOW</p></a>
+                                    </div>
+                                    <div class="three-pics">
+                                        <img src="images/shop/new-arrival/new-arrival08-1.JPG">
+                                        <img src="images/shop/new-arrival/new-arrival08-2.jpg">
+                                        <img src="images/shop/new-arrival/new-arrival08-3.JPG">
+                                    </div>
+                               </div>
+                               </div>
+                           </div>
+                        </div>
+                        </div>   
+                        <div class="arrow-img-down">
+                            
+                        </div> 
+                        <!-- <a class="pagedownto-3">
+                    
+                        </a> -->
+                        
+                    </section>	
+                    </div>
+                    <!---new-arrivals end----->
+                    
+                     
+                    <!---new-arrivals-2 start----->
+                    <div class="wrap-new-2">
+                        <h2>NEW ARRIALS RECOMMEND</h2>
+                    </div>
+                    
+                    <!---new-arrivals-2 end----->
+                    
+                    
+                     
+                    <!---new-arrivals-3 start----->
+                    <!-- <div class="wrap wrap-new-3">
+                        <section class="new-arrivals">
+                            <h2>NEW ARR!VALS M0DEL</h2>
+                            <div class="new-container">
+                                    <div class="square-box">
+                                        <a href="#"><img src="images/index/asset04.png" alt=""></a>
+                                    </div>
+                                    <div class="square-box">
+                                        <a href="#"><img src="images/index/asset03.png" alt=""></a>
+                                    </div>
+                                    <div class="square-box">
+                                        <a href="#"><img src="images/index/asset05.png" alt=""></a>
+                                    </div>
+                                <div class="square-btn right-btn">
+                                    <a href="#" class="circle-a">
+                                        <i class="fa fa-angle-left  circle-btn"></i>
+                                    </a>
+                                </div>
+                                <div class="square-btn left-btn">
+                                    <a href="#" class="circle-a">
+                                        <i class="fa fa-angle-right circle-btn"></i>
+                                    </a>
+                                </div>
+                            </div>
+                    </div> -->
+            </div>
+                <!---new-arrivals-3 end----->
+
+                <!---product  start----->
+            <div class="content">        
+                <div class="wrap-product">
+                    <section class="product">
+                        <div class="side-bar">
+                            <ul >
+                                <li><a href="#" class="active">CLOTHES</a></li>
+                                <li><a href="#">JACKETS</a></li>
+                                <li><a href="#">PANTS</a></li>
+                                <li><a href="#">SHOES</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="product-container">
+                            <h2>CL0THES</h2>
+                            <div class="product-region">
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="goods.html" class="photo_link">
+                                            <img src="images/shop/clothes/clothes02.JPG">
+                                            <div class="photo_text">
+                                                <span>BUY</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4>Green Shirts</h4>
+                                    <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                <div class="product-img">
+                                    <a href="goods.html" class="photo_link">
+                                        <img src="images/shop/clothes/clothes01.jpg">
+                                        <div class="photo_text">
+                                            <span>BUY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4>Blue Shirt</h4>
+                                <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="goods.html" class="photo_link">
+                                            <img src="images/shop/clothes/clothes03.jpg">
+                                            <div class="photo_text">
+                                                <span>BUY</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4>Arm Shirt</h4>
+                                    <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                <div class="product-img">
+                                    <a href="goods.html" class="photo_link">
+                                        <img src="images/shop/clothes/clothes04.jpg">
+                                        <div class="photo_text">
+                                            <span>BUY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4>Orea Shirt</h4>
+                                <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="goods.html" class="photo_link">
+                                            <img src="images/shop/clothes/clothes05.jpg">
+                                            <div class="photo_text">
+                                                <span>BUY</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4>Snow Shirt</h4>
+                                    <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                <div class="product-img">
+                                    <a href="goods.html" class="photo_link">
+                                        <img src="images/shop/clothes/clothes06.jpg">
+                                        <div class="photo_text">
+                                            <span>BUY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4>Swaggy Shirt</h4>
+                                <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="goods.html" class="photo_link">
+                                            <img src="images/shop/clothes/clothes07.jpg">
+                                            <div class="photo_text">
+                                                <span>BUY</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4>Orang Shirt</h4>
+                                    <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                <div class="product-img">
+                                    <a href="goods.html" class="photo_link">
+                                        <img src="images/shop/clothes/clothes08.jpg">
+                                        <div class="photo_text">
+                                            <span>BUY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4>Pink Shirt</h4>
+                                <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="product.html" class="photo_link">
+                                            <img src="images/shop/clothes/clothes09.jpg">
+                                            <div class="photo_text">
+                                                <span>BUY</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4>Grid Cloth</h4>
+                                    <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                <div class="product-img">
+                                    <a href="product.html" class="photo_link">
+                                        <img src="images/shop/clothes/clothes10.jpg">
+                                        <div class="photo_text">
+                                            <span>BUY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4>Gental Cloth</h4>
+                                <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <a href="product.html" class="photo_link">
+                                            <img src="images/shop/clothes/clothes11.jpg">
+                                            <div class="photo_text">
+                                                <span>BUY</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h4>Pure Cloth</h4>
+                                    <p>NT $1980</p>
+                                </div>
+                                <div class="product-item">
+                                <div class="product-img">
+                                    <a href="goods.html" class="photo_link">
+                                        <img src="images/shop/clothes/clothes12.jpg">
+                                        <div class="photo_text">
+                                         <span>BUY</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h4>PULLOVER JACKET</h4>
+                                <p>NT $1980</p>
+                                </div>
+                            
+                            </div>
+
+                                <!-- <div class="goods-item">
+                                    <div class="goods-img">
+                                        <a></a>
+                                        <img src="images/shop/clothes/clothes01.jpg">
+                                        <div class="buy">
+                                            <a href="#">BUY</a>
+                                        </div>
+                                        </div>
+                                            <h4>PULLOVER JACKET</h4>
+                                            <p>NT $1980</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!---product  end----->
+
+            </div>
+               
+<!---product  start----->
+<div class="content">
+    <div class="wrap-product">
+        <section class="product">
+            <div class="side-bar">
+                <ul>
+                    <li><a href="#" class="active">CLOTHES</a></li>
+                    <li><a href="#">JACKETS</a></li>
+                    <li><a href="#">PANTS</a></li>
+                    <li><a href="#">SHOES</a></li>
+                    
+                </ul>
+            </div>
+            <div class="goods-container">  
+            <div class="goods">
+                <!-- <canvas id="space"></canvas> -->
+                    <div class="goods-region">
+                            <div class="commodity-img">
+                                <div class="detailImg">
+                                    <ul class="picGroup">
+                                        <li>
+                                            <div class="img-zoom">
+                                            <img  class="img-main" src="images/shop/goods01.JPG" alt="">
+                                            <img src="images/shop/goods01-max.JPG" alt="" class="img-zoomed">
+                                            </div>					
+                                        </li>
+                                        <li>
+                                            <div class="img-zoom2">
+                                            <img  class="img-main" src="images/shop/goods02.JPG" alt="">
+                                            <img class="img-zoomed2"  src="images/shop/goods02-max.JPG" />
+                                            </div>
+                                        </li>
+                                       
+                                        <li>
+                                            <div class="img-zoom4">
+                                            <img  class="img-main" src="images/shop/goods04.JPG" alt="">
+                                            <img class="img-zoomed4"  src="images/shop/goods04-max.jpg" />
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img-zoom3">
+                                            <img  class="img-main" src="images/shop/goods06.JPG" alt="">
+                                            <img class="img-zoomed3"  src="images/shop/goods06-max.jpg" />
+                                            </div>
+                                        </li>
+                                        <!-- <li>
+                                            <div class="img-zoom4">
+                                            <img  class="img-main" src="images/shop/goods06.jpg" alt="">
+                                            <img class="img-zoomed4"  src="img/new-arrival01-3_gaitubao_com_1850x1850.jpg" />
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                    <!-- <img  class="img-main" src="images/shop/goods01.JPG" alt=""> -->
+                                </div>
+                                <div class="imgChange">
+                                    <ul>
+                                        <div class="smallChange active">
+                                            <img src="images/shop/goods01.JPG" alt="">
+                                        </div>
+                                        <div class="smallChange">
+                                            <img src="images/shop/goods02.JPG" alt="">
+                                        </div>                                
+                                        <div class="smallChange">
+                                            <img src="images/shop/goods04.JPG" alt="">
+                                        </div>
+                                        <div class="smallChange">
+                                            <img src="images/shop/goods06.jpg" alt="">
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="goods-buy">
+                                <h2>JACKETS</h2>
+                                <p>Hot in this summer,recommending by CLOT and MDNS
+                                    sponsor ,don't miss this chance ,only sell for 3
+                                    mounts ,if you wanna get one just click the buy!
+                                </p>
+                                <p>NT$1840</p>
+                                <div class="buy-box">
+                                    <div class="size-box">
+                                        <span>size</span>
+                                        <select name="size">
+                                            <option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                            <option value="xl">XL</option>
+                                        </select>
+                                    </div>
+                                    <div class="amount-box">
+                                        <span>amount</span>
+                                        <select name="amount">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <a  class="btn  btn-black position-btn buy">Add to<i class="fa fa-heart" id="heart"></i></a>
+                                    <a href="#" class="btn  btn-black position-btn buy">BUY</a>
+                                    <!-- <a href="#" class="favorite-button"><p>ADD TO</p></a>
+                                    <a href="#" class="buy-button"><p>BUY NOW</p></a>  -->
+                                </div>                       
+                            </div>
+                            <script>
+                                //加入收藏 或 取消收藏
+                                
+                                function switchFavorite(){
+                                    var heart = document.getElementById("heart");
+                                    if( heart.title=="加入收藏"){
+                                        heart.style.color= "#999";
+                                        heart.title="取消收藏";
+                                    }else{
+                                        heart.style.color= "#f00";
+                                        heart.title="加入收藏";		
+                                    }
+                                }
+                                
+                                function init(){
+                                  //設定[加入收藏 或 取消收藏]的點按事件
+                                  //document.getElementById("heart").onclick = switchFavorite;
+                                  document.getElementById("heart").addEventListener("click", switchFavorite,false);
+                                 
+                                }//init
+                                window.onload = init;
+                                
+                                </script> 
+                            <h4>RECOMMEND</h4>
+                            <div class="recommend">                                 
+                                <div class="product-item">                       
+                                    <div class="product-img">
+                                        <div class="photo_link">
+                                            <img src="images/shop/clothes/clothes17.jpg">
+                                            <!-- <div class="photo_text"><span>BUY</span></div> -->
+                                        </div>
+                                        <div class="product-text">                               
+                                            <a href="#">GO SEE NOW</a>                                               
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <div class="photo_link">
+                                            <img src="images/shop/clothes/clothes23.jpg">
+                                            <!-- <div class="photo_text"><span>BUY</span></div> -->
+                                        </div>
+                                        <div class="product-text">                               
+                                            <a href="#">GO SEE NOW</a>                                               
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-img">
+                                        <div class="photo_link">
+                                            <img src="images/shop/clothes/clothes24.jpg">
+                                            <!-- <div class="photo_text"><span>BUY</span></div> -->
+                                        </div>
+                                        <div class="product-text">                               
+                                            <a href="#">GO SEE NOW</a>                                               
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+      
+        </section>
+        <div class="space"></div>      
+    </div> 
+</div>
+
+<!---product  end----->
+
+<!--footer 開始 -->
+<footer class="footer_wrap">
+    <section class="footer">
+        <div class="footer_container">
+            <div class="footer_item">
+                <h3>Follow-Us</h3>
+                <div class="icon_container">
+                    <a href="#">
+                        <div class="icon_region">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="icon_region">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="icon_region">
+                            <i class="fa fa-google-plus"></i>
+                        </div>
+                    </a> 
+                    <a href="#">
+                        <div class="icon_region">
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            <div class="footer_item">
+                <h3>Our-Sevice</h3>
+                <ul>
+                    <li><a href="#">Payment-Method</a></li>
+                    <li><a href="#">Shipping-information</a></li>
+                    <li><a href="#">Frack-Oder</a></li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <h3>Contact-Us</h3>
+                <h4>E-mail</h4>
+                <div class="contact">
+                    <input type="text" placeholder="Enter Your Name...">
+                
+                </div>
+                <h4>Text all you wanna Say</h4>
+                <textarea name="contact[message]" placeholder="Your Message..." id="contact-form-message"></textarea>
+                <div class="button">
+                    <a href="#" class="btn btn-white">SUBMIT</a>
+                </div>
+            </div>
+            <div class="footer_item">
+                <h3>Infromation</h3>
+                <img src="images/map.jpg" alt="">
+                <p>Adress:Taipei ChunShao Fushin BaDa Road 9th</p>
+                <p>Phone:(02)2323-4545</p>
+                <p>Open time</p>
+                <p>Mon to Sun   9:00am~22:00pm</p>
+            </div>
+        </div>
+    </section>
+    <section class="wrap_copy_right">
+        <div class="copy_right">Intense © 2018 . Privacy Policy</div>
+    </section>
+    <a href="#">
+        <div class="arrow_to_top">
+            <i class="fa fa-rocket"></i>
+        </div>
+    </a>
+</footer>
+<!--footer 結束 -->
+<!-- nav 結束 -->
+
+<!---new-arrivals start--->
+<script>
+        //=====================內分業=========================
+$(document).ready(function () {
+    $('li').css("cursor","pointer");
+    $('.content').hide().first(0).show().addClass('active');
+    $('li').click(function(e){
+        var index = $(this).index(); 
+        $('.content.active').removeClass('active').stop().fadeOut(function(){
+            $('.content').eq(index).stop().show(0).addClass('active');
+        });
+
+    });
+    var picGroup = $('.picGroup');
+		$('.smallChange').click(function(){
+			var picGroup = $('.picGroup');
+			$(this).addClass('active');
+			$('.smallChange').not(this).removeClass('active');	
+			var distance = ($(this).index())*-100;
+			$('.picGroup').css("left",distance+"%");
+
+			// var name = $(this).attr("img-zoomed");			
+			//  $(this).css('z-index','2');
+		});
+});
+
+
+$(document).ready(function(){
+    $(".nav_btn").click(function(){
+        $(".nav_btn").removeClass("activeColor");
+        $(this).addClass("activeColor");
+        // $(this).css("background","rgba(105,105,105,1)");
+        // $(this).css("background","rgb(10, 10, 77)!important");
+    })
+
+
+})
+
+</script>
+
+<script type="text/javascript">
+	$('.img-zoom').on( "mousemove", function( event ) {
+	var zoomHeight = $('.img-zoomed').outerHeight() - $(this).outerHeight();
+	var zoomWidth = $('.img-zoomed').outerWidth() - $(this).outerWidth();
+	
+	var top = 	( ( $(this).offset().top - event.pageY ) * ( zoomHeight / $(this).outerHeight() ) ) - $(this).outerHeight();
+	var left =  ( ( $(this).offset().left - event.pageX ) * parseInt( zoomWidth / $(this).outerWidth() ) ) - $(this).outerWidth();
+
+	var translate = left+"px,"+top+"px";
+	
+	
+	$('.img-zoomed').css({
+			"-webkit-transform":"translate("+translate+")",
+			"-ms-transform":"translate("+translate+")",
+			"transform":"translate("+translate+")"
+  });
+});
+	$('.img-zoom2').on( "mousemove", function( event ) {
+	var zoomHeight = $('.img-zoomed2').outerHeight() - $(this).outerHeight();
+	var zoomWidth = $('.img-zoomed2').outerWidth() - $(this).outerWidth();
+	
+	var top = 	( ( $(this).offset().top - event.pageY ) * ( zoomHeight / $(this).outerHeight() ) ) - $(this).outerHeight();
+	var left =  ( ( $(this).offset().left - event.pageX ) * parseInt( zoomWidth / $(this).outerWidth() ) ) - $(this).outerWidth();
+
+	var translate = left+"px,"+top+"px";
+	
+	
+	$('.img-zoomed2').css({
+			"-webkit-transform":"translate("+translate+")",
+			"-ms-transform":"translate("+translate+")",
+			"transform":"translate("+translate+")"
+  });
+});
+
+	$('.img-zoom3').on( "mousemove", function( event ) {
+	var zoomHeight = $('.img-zoomed3').outerHeight() - $(this).outerHeight();
+	var zoomWidth = $('.img-zoomed3').outerWidth() - $(this).outerWidth();
+	
+	var top = 	( ( $(this).offset().top - event.pageY ) * ( zoomHeight / $(this).outerHeight() ) ) - $(this).outerHeight();
+	var left =  ( ( $(this).offset().left - event.pageX ) * parseInt( zoomWidth / $(this).outerWidth() ) ) - $(this).outerWidth();
+
+	var translate = left+"px,"+top+"px";
+	
+	
+	$('.img-zoomed3').css({
+			"-webkit-transform":"translate("+translate+")",
+			"-ms-transform":"translate("+translate+")",
+			"transform":"translate("+translate+")"
+  });
+});
+
+	$('.img-zoom4').on( "mousemove", function( event ) {
+	var zoomHeight = $('.img-zoomed4').outerHeight() - $(this).outerHeight();
+	var zoomWidth = $('.img-zoomed4').outerWidth() - $(this).outerWidth();
+	
+	var top = 	( ( $(this).offset().top - event.pageY ) * ( zoomHeight / $(this).outerHeight() ) ) - $(this).outerHeight();
+	var left =  ( ( $(this).offset().left - event.pageX ) * parseInt( zoomWidth / $(this).outerWidth() ) ) - $(this).outerWidth();
+
+	var translate = left+"px,"+top+"px";
+	
+	
+	$('.img-zoomed4').css({
+			"-webkit-transform":"translate("+translate+")",
+			"-ms-transform":"translate("+translate+")",
+			"transform":"translate("+translate+")"
+  });
+});
+</script>
+
+</body>
+</html>

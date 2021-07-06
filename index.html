@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oder Space</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- owl carousel -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css'>
+	<!-- font -->
+	<link href="http://allfont.net/allfont.css?fonts=star-jedi" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<!-- my favorite -->
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<!-- <script rel="stylesheet" src="js/index.js"></script> -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script rel="stylesheet" src="js/common.js"></script>
+	<script rel="stylesheet" src="js/all.js"></script>	
+	<!-- JQ/JS -->
+<body>
+<!-- 燈箱：登入 -->
+<div id="lightBox" style="display:none">
+	<table border="1" align="center" cellspacing="0" id="tableLogin">
+	<tr><td>MemberID</td><td><input type="text" name="memId" id="memId"></td></tr>
+	<tr><td>Password</td><td><input type="password" name="memPsw" id="memPsw"></td></tr>
+	<tr><td colspan="2" align="center">
+			<input type="button" id="btnLogin" value="sign">
+			<input type="button" id="btnLoginCancel" value="cancel">
+		</td></tr>
+	</table>
+</div>
+<!--navagation 開始 -->
+    <header>
+        <div class="navgation">
+            <div class="navgation-inner">
+                <a href="index.html" class="logo">
+                    <img src="images/logo-web.svg" alt="">
+                </a>
+                    <nav class="navbar">
+						<ul>
+							<li><a href="shop.html"">SH0P</a></li>                        
+							<li><a href="show.html">SH0W</a></li>
+							<li><a href="news.html">NEWS</a></li>
+							<li><a href="brand.html">BRAND</a></li>
+							<li><a href="#" class="contactdown">C0NTACT</a></li>
+						</ul>
+					</nav>
+					<h1>ODER SPACE</h1>
+                    <div class="member-bar">
+						<span id="memName">&nbsp;</span>
+						<span id="spanLogin">
+                            <i class="fa fa-user-o"></i>
+						</span>						
+						<a href="#" type="button" name="btn" value="10+20=?[0]" onClick="buyCar();">
+                            <i class="fa fa-shopping-cart"></i>
+						</a>
+					
+					</div>
+					<div class="hamburger">
+						<div class="line middle"></div>
+						<div class="line top"></div>
+						<div class="line bottom"></div>
+					</div>
+					<nav class="nav-mobile">
+						<ul>
+							<li><a href="shop.html"">SH0P</a></li>                        
+							<li><a href="show.html">SH0W</a></li>
+							<li><a href="news.html">NEWS</a></li>
+							<li><a href="brand.html">BRAND</a></li>
+							<li><a href="#" class="contactdown">C0NTACT</a></li>
+						</ul>
+					</nav>
+            </div>
+        </div>
+    </header>
+<!--navagation 結束 -->
+
+<!-- banner 開始 -->
+	<div class="wrap-banner">
+            <div class="banner-index">
+                <img src="images/index/asset02.png" alt="">
+				<h1><span>0DER</span><span>SPACE</span></h1>
+					<i class="fa fa-angle-double-down pagedown"></i>
+				<svg height="0" width="0" class="svg-clip">
+						<defs>
+							<clipPath id="hero-clip" clipPathUnits="objectBoundingBox">
+								<polygon fill="none" points="0,0 1,0 1,.8 .5,1 0,.8 "/>
+							</clipPath>
+						</defs>
+					</svg>
+			</section>
+	</div>
+<!-- banner 結束 -->
+
+<!--new-arrivals 開始 -->
+	<div class="wrap">
+        <section class="new-arrivals" id="next_page">
+			<h2>NEW ARRIVALS</h2>
+            <div class="new-container">
+				<canvas id="space"></canvas>
+				<div class="carousel_wrap">
+					<div id="carousel">
+						<div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+										<img src="images/index/news-arrivals/tumblr_p2rtnlQIY41wsmwyqo1_6401.png" alt="">
+										<img src="images/index/news-arrivals/new-arrivals-front-03.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/news-arrivals/new-back-01.png" alt="">
+									<img  src="images/index/news-arrivals/new-front-01.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/news-arrivals/new-front-02.png" alt="">
+									<img src="images/index/news-arrivals/new-back-02.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+										<img src="images/index/news-arrivals/tumblr_p2rtnlQIY41wsmwyqo1_6401.png" alt="">
+										<img src="images/index/news-arrivals/new-arrivals-front-03.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/news-arrivals/new-back-01.png" alt="">
+									<img  src="images/index/news-arrivals/new-front-01.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/news-arrivals/new-front-02.png" alt="">
+									<img src="images/index/news-arrivals/new-back-02.png" alt="">
+								</div>
+							</div>
+						</div>
+						<!-- <div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/asset04.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/asset04.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/asset04.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/asset04.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/asset04.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/asset03.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div  class="shadow">
+							<div class="square-box">
+								<div class="caption carous_item carous_item3">
+									<img src="images/index/asset05.png" alt="">
+								</div>
+							</div>
+						</div> -->
+			</div>
+				<a id="prev" class="nav_button prev_button link pull-left square-btn" title="prev">
+					<i class="fa fa-angle-right circle-btn"></i>
+				</a>
+				<a id="next" class="nav_button next_button link pull-right" title="next">
+						<i class="fa fa-angle-right circle-btn"></i>
+				</a>
+			</div>
+		</div>
+	<!-- <a href="#" class="btn btn-white">MORE</a> -->
+	
+</section>
+</div>
+<script>var canvas;
+		var context;
+		var screenH;
+		var screenW;
+		var stars = [];
+		var fps = 50;
+		var numStars = 2000;
+		
+		$('document').ready(function() {
+		  
+		  // Calculate the screen size
+			screenH = $(window).height();
+			screenW = $(window).width();
+			
+			// Get the canvas
+			canvas = $('#space');
+			
+			// Fill out the canvas
+			canvas.attr('height', screenH);
+			canvas.attr('width', screenW);
+			context = canvas[0].getContext('2d');
+			
+			// Create all the stars
+			for(var i = 0; i < numStars; i++) {
+				var x = Math.round(Math.random() * screenW);
+				var y = Math.round(Math.random() * screenH);
+				var length = 1 + Math.random() * 2;
+				var opacity = Math.random();
+				
+				// Create a new star and draw
+				var star = new Star(x, y, length, opacity);
+				
+				// Add the the stars array
+				stars.push(star);
+			}
+			
+			setInterval(animate, 1000 / fps);
+		});
+		
+		/**
+		 * Animate the canvas
+		 */
+		function animate() {
+			context.clearRect(0, 0, screenW, screenH);
+			$.each(stars, function() {
+				this.draw(context);
+			})
+		}
+		
+		/**
+		 * Star
+		 * 
+		 * @param int x
+		 * @param int y
+		 * @param int length
+		 * @param opacity
+		 */
+		function Star(x, y, length, opacity) {
+			this.x = parseInt(x);
+			this.y = parseInt(y);
+			this.length = parseInt(length);
+			this.opacity = opacity;
+			this.factor = 1;
+			this.increment = Math.random() * .03;
+		}
+		
+		/**
+		 * Draw a star
+		 * 
+		 * This function draws a start.
+		 * You need to give the contaxt as a parameter 
+		 * 
+		 * @param context
+		 */
+		Star.prototype.draw = function() {
+			context.rotate((Math.PI * 1 / 10));
+			
+			// Save the context
+			context.save();
+			
+			// move into the middle of the canvas, just to make room
+			context.translate(this.x, this.y);
+			
+			// Change the opacity
+			if(this.opacity > 1) {
+				this.factor = -1;
+			}
+			else if(this.opacity <= 0) {
+				this.factor = 1;
+				
+				this.x = Math.round(Math.random() * screenW);
+				this.y = Math.round(Math.random() * screenH);
+			}
+				
+			this.opacity += this.increment * this.factor;
+			
+			context.beginPath()
+			for (var i = 5; i--;) {
+				context.lineTo(0, this.length);
+				context.translate(0, this.length);
+				context.rotate((Math.PI * 2 / 10));
+				context.lineTo(0, - this.length);
+				context.translate(0, - this.length);
+				context.rotate(-(Math.PI * 6 / 10));
+			}
+			context.lineTo(0, this.length);
+			context.closePath();
+			context.fillStyle = "rgba(255, 255, 200, " + this.opacity + ")";
+			context.shadowBlur = 5;
+			context.shadowColor = '#ffff33';
+			context.fill();
+			
+			context.restore();
+		}</script>	   
+<!--new-arrivals 結束 -->
+
+<!--shop 開始 -->
+<div class="wrap-shop">
+	<section class="shop">
+		<div class="shop-title">
+			<h2>SHOP</h2>
+		</div>
+		<div class="shop-container">
+			<div class="shop-item">
+				<a href="shop.html">
+					<h3>SHIRT</h3>
+					<img src="images/index/shop/shirt.JPG" alt="">	
+				</a>			
+			</div>
+
+			<div class="shop-item">
+				<a href="shop.html">
+					<h3>PANTS</h3>
+					<img src="images/index/shop/pants.JPG" alt="">
+				</a>			
+			</div>
+			
+			<div class="shop-item">
+				<a href="shop.html">
+					<h3>SHOES</h3>
+					<img src="images/index/shop/shoes.JPG" alt="">	
+				</a>				
+			</div>
+
+			<div class="shop-item">
+				<a href="shop.html">
+					<h3>ACCESORY</h3>
+					<img src="images/index/shop/accesory.JPG" alt="">	
+				</a>				
+			</div>
+
+			<div class="shop-item">
+				<a href="shop.html">
+					<h3>CAP</h3>
+					<img src="images/index/shop/cap.JPG" alt="">		
+				</a>			
+			</div>
+
+			<div class="shop-item">
+				<a href="shop.html">
+					<h3>JACKET</h3>
+					<img src="images/index/shop/jacket.JPG" alt="">
+				</a>
+			</div>
+
+			<div class="shop-item">
+				<a href="shop.html">
+					<h3>BAG</h3>
+					<img src="images/index/shop/bag.JPG" alt="">			
+				</a>		
+			</div>
+		</div>
+		<div class="shop-container-mobile">
+				<div class="owl-carousel">
+
+					<div class="item shirts">
+					<a href="shop.html">
+					<img src="images/index/shop/shirt.JPG"></a>
+					</div>
+
+					<div class="item shoes">
+					<a href="shop.html">
+					<img src="images/index/shop/shoes.JPG"></a>
+					</div>
+				
+					<div class="item accesory">
+					<a href="shop.html">
+					<img src="images/index/shop/accesory.JPG"></a>
+					</div>
+				
+					<div class="item pants">
+					<a href="shop.html">
+					<img src="images/index/shop/pants.JPG"></a>
+					</div>
+					
+					<div class="item cap">
+					<a href="shop.html">
+					<img src="images/index/shop/cap.JPG"></a>
+					</div>
+				
+					<div class="item jacket">
+					<a href="shop.html">
+					<img src="images/index/shop/jacket.JPG"></a>
+					</div>
+			
+					<div class="item bag">
+					<a href="shop.html">
+					<img src="images/index/shop/bag.JPG"></a>
+					</div>
+				</div>
+			</div>
+		<svg height="0" width="0">
+				<defs>
+					<clipPath>
+						<polygon fill="none" points="0,1,2,.5,0 0,.8 ">
+					</clipPath>
+				</defs>
+			</svg>
+	</section>
+</div>
+<!--shop 結束 -->
+
+<!--news 開始 -->
+<div class="wrap">
+	<section class="news">
+			<div class="news-title">
+					<h2>NEWS</h2>
+			</div>
+			<div class="news-container ">
+				<div class="news-item left01">
+					<img src="images/index/news/news01.jpg" alt="">
+					<div class="news-text">
+						<h3>New Show Is Coming Now!</h3>
+						<p>new stuff is coming.just prepare  the money and buy
+								.just prepare  the money and buy.new stuff is coming.just prepare  the money 
+						</p>
+					</div>
+					<a href="#" class="btn  btn-black position-btn">MORE</a>
+				</div>
+				<div class="news-item right02">
+						<img src="images/index/news/news02.jpg" alt="">
+						<div class="news-text">
+							<h3>Hot Stuff all you can pick!</h3>
+							<p>Black wind is blowing to TW! prepare  the money and buy
+							.just prepare uy.stuff is coming.don't miss this chance
+							</p>
+						</div>
+						<a href="#" class="btn  btn-black position-btn">MORE</a>
+				</div>
+				<div class="news-item right03">
+						<img src="images/index/news/news03.jpg" alt="">
+						<div class="news-text">
+							<h3>Suprem show a jewery box in house..</h3>
+							<p>Suprem is coming.just prepare  the money and buy
+							.just prepare  tey and buy.on sale for 18% in fall.order 
+							5 items and we send you one gift.
+							</p>
+						</div>
+						<a href="#" class="btn  btn-black position-btn">MORE</a>
+				</div>
+				<div class="news-item left04">
+						<img src="images/index/instagram/instagram23.jpg" alt="">
+						<div class="news-text">
+							<h3>MAFO prepare holding EDM in Park!</h3>
+							<p>the fanmous world's EDM dj is come to Taipei on Mon,and buy
+									.just prepare  the money and buy.new stuff is coming.
+							</p>
+						</div>
+						<a href="#" class="btn  btn-black position-btn">MORE</a>
+					</div>
+			</div>
+	</section>
+</div>
+
+<!--news 結束 -->
+<script>
+	var width=$("body").width();
+	if(width>=473){
+$(window).scroll(function(){
+		if($(".left01").offset().top-$(window).scrollTop()<$(window).height()){//要看到物件才會觸發
+		$(".left01").addClass("fade-left");//添加class
+		}
+	
+		if($(".right02").offset().top-$(window).scrollTop()<$(window).height()){//要看到物件才會觸發
+		$(".right02").addClass("fade-right");//添加class
+		}
+	
+		if($(".left04").offset().top-$(window).scrollTop()<$(window).height()){//要看到物件才會觸發
+		$(".left04").addClass("fade-left");//添加class
+		}
+	
+		if($(".right03").offset().top-$(window).scrollTop()<$(window).height()){//要看到物件才會觸發
+		$(".right03").addClass("fade-right");//添加class
+		}
+
+	});
+}
+  </script>
+
+<!-- <script>
+		var width=$("body").width();
+		if(width>=473){
+	$(window).scroll(function(){
+			if($(".left01").offset().top-$(window).scrollTop()<$(window).height()){//要看到物件才會觸發
+			$(".left01").removeClass("scroll-left01").addClass("fade-left");//添加ＣＳＳ
+			}
+			if($(".left01").offset().top-$(window).scrollTop()>$(window).height()){//離開物件的時候觸發
+			$(".left01").removeClass("fade-left").addClass("scroll01");//取消css
+			}
+	
+			if($(".right02").offset().top-$(window).scrollTop()<$(window).height()){//要看到物件才會觸發
+			$(".right02").removeClass("scroll-right02").addClass("fade-right");//添加ＣＳＳ
+			}
+			if($(".right02").offset().top-$(window).scrollTop()>$(window).height()){//離開物件的時候觸發
+			$(".right02").removeClass("fade-right").addClass("scroll-right02");//取消css
+			}
+	
+			if($(".left04").offset().top-$(window).scrollTop()<$(window).height()){//要看到物件才會觸發
+			$(".left04").removeClass("scroll-left04").addClass("fade-left");//添加ＣＳＳ
+			}
+			if($(".left04").offset().top-$(window).scrollTop()>$(window).height()){//離開物件的時候觸發
+			$(".left04").removeClass("fade-left").addClass("scroll04");//取消css
+			}
+	
+			if($(".right03").offset().top-$(window).scrollTop()<$(window).height()){//要看到物件才會觸發
+			$(".right03").removeClass("scroll-right03").addClass("fade-right");//添加ＣＳＳ
+			}
+			if($(".right03").offset().top-$(window).scrollTop()>$(window).height()){//離開物件的時候觸發
+			$(".right03").removeClass("fade-right").addClass("scroll-right03");//取消css
+			}
+	
+		});
+	}
+	  </script> -->
+<!--show 開始 -->
+<div class="wrap-show">
+	<section class="show">
+			<div class="show-title">
+					<h2>SHOW</h2>
+			</div>
+			<div class="show-container">
+				<div class="show-video">
+					<iframe width="600" height="315" src="https://www.youtube.com/embed/o23JYCQ_LkA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="show-text">
+						<h2>New Show Is Coming Now!</h2>
+						<p>new stuff is coming.just prepare  the money and buy
+						.just prepare  tey and buy.just prepare  the money and buy
+						.just prepare  the money and buy!.just prepare  the money and buy
+						new stu  the money and buy!
+						</p>
+						<div class="button btn-width">
+							<a href="show.html" class="btn  btn-black button">Choose another show</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+</div>
+<!--show 結束 -->
+
+<!--intagram 開始 -->
+<div class="wrap"">
+	<section class="instagram">
+		<div class="instagram-container">
+			<div class="instagram-title">
+				<h2>INSTAGRAM</h2>
+			</div>
+			<div class="space"></div>
+			<div class="wrap">
+					<div class="white-space black"></div>
+				</div>
+			<div class="instagram-pic">
+					<div class="col-3">
+						<a href="#"><img src="images/index/instagram/purege06.jpg" alt=""></a>	
+						<a href="#"><img src="images/index/instagram/purge07.jpg" alt=""></a>	
+						<a href="#"><img src="images/index/instagram/lovely01.jpg" alt=""></a>	
+					</div>
+					<div class="col-3">
+						<a href="#"><img src="images/index/instagram/instagram22.jpg" alt=""></a>
+						<!-- <a href="#"><img src="images/show/photos23.jpg" alt=""></a>	 -->
+						<a href="#"><img src="images/index/instagram/instagram03.jpg" alt=""></a>		
+						<a href="#"><img src="images/index/instagram/instagram28.jpg" alt=""></a>	
+					</div>
+					<div class="col-3">
+						<a href="#"><img src="images/show/photos08.jpg" alt=""></a>	
+						<a href="#"><img src="images/show/photos06.jpg" alt=""></a>	
+						<a href="#"><img src="images/show/photos23.jpg" alt=""></a>	
+					</div>
+				</div>
+		</div>
+		<div class="instagram-pic-mobile">
+			<div class="owl-carousel">			
+				<div class="item">
+				<a class="ig01" ></a> 
+				</div>
+			
+				<div class="item">
+				<a class="ig02" ></a> 
+				</div>
+			
+				<div class="item">
+				<a class="ig03" ></a>
+				</div>
+				
+				<div class="item">
+				<a class="ig04" ></a>			
+				</div>
+			
+				<div class="item">
+				<a class="ig05" ></a>				
+				</div>
+		
+				<div class="item">
+				<a class="ig06" ></a>
+				</div>
+
+				
+				<div class="item">
+				<a class="ig07" ></a>				
+				</div>	
+				
+				
+				<div class="item">
+				<a class="ig08" ></a>
+				</div>
+
+				
+				<div class="item">
+				<a class="ig09" ></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+</div>
+<div class="wrap">
+	<div class="white-space"></div>
+</div>
+<!--intagram 結束 -->
+
+<!--footer 開始 -->
+		<footer class="footer_wrap">
+			<section class="footer">
+				<div class="footer_container">
+					<div class="footer_item">
+						<h3>Follow-Us</h3>
+						<div class="icon_container">
+							<a href="#">
+								<div class="icon_region">
+									<i class="fa fa-facebook"></i>
+								</div>
+							</a> 
+							<a href="#">
+								<div class="icon_region">
+									<i class="fa fa-twitter"></i>
+								</div>
+							</a> 
+							<a href="#">
+								<div class="icon_region">
+									<i class="fa fa-google-plus"></i>
+								</div>
+							</a> 
+							<a href="#">
+								<div class="icon_region">
+									<i class="fa fa-linkedin"></i>
+								</div>
+							</a> 
+						</div>
+					</div>
+					<div class="footer_item">
+						<h3>Our-Sevice</h3>
+						<ul>
+							<li><a href="#">Payment-Method</a></li>
+							<li><a href="#">Shipping-information</a></li>
+							<li><a href="#">Frack-Oder</a></li>
+						</ul>
+					</div>
+					<div class="footer_item"  id="contact_us">
+						<h3>Contact-Us</h3>
+						<h4>E-mail</h4>
+						<div class="contact">
+							<input type="text" placeholder="Enter Your Name...">
+						
+						</div>
+						<h4>Text all you wanna Say</h4>
+						<textarea name="contact[message]" placeholder="Your Message..." id="contact-form-message"></textarea>
+						<div class="button">
+							<a href="#" class="btn btn-white">SUBMIT</a>
+						</div>
+					</div>
+					<div class="footer_item">
+						<h3>Infromation</h3>
+						<img src="images/map.jpg" alt="">
+						<p>Adress:Taipei ChunShao Fushin BaDa Road 9th</p>
+						<p>Phone:(02)2323-4545</p>
+						<p>Open time</p>
+						<p>Mon to Sun   9:00am~22:00pm</p>
+					</div>
+				</div>
+			</section>
+			<section class="wrap_copy_right">
+				<div class="copy_right">Intense © 2018 . Privacy Policy</div>
+			</section>
+		
+				<div class="arrow_to_top">
+					<i class="fa fa-rocket"></i>
+				</div>
+		
+		</footer>
+<!--footer 結束 -->
+<script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+<script  src="js/index2.js"></script>
+
+<script>
+(function ($) {
+ 'use strict';
+
+ $.fn.waterwheelCarousel = function (startingOptions) {
+
+   // Adds support for intializing multiple carousels from the same selector group
+   if (this.length > 1) {
+	 this.each(function () {
+	   $(this).waterwheelCarousel(startingOptions);
+	 });
+	 return this; // allow chaining
+   }
+
+   var carousel = this;
+   var options = {};
+   var data = {};
+
+   function initializeCarouselData() {
+	 data = {
+	   itemsContainer: $(carousel),
+	   totalItems: $(carousel).children().length,
+	   containerWidth: $(carousel).width(),
+	   containerHeight: $(carousel).height(),
+	   currentCenterItem: null,
+	   previousCenterItem: null,
+	   items: [],
+	   calculations: [],
+	   carouselRotationsLeft: 0,
+	   currentlyMoving: false,
+	   itemsAnimating: 0,
+	   currentSpeed: options.speed,
+	   intervalTimer: null,
+	   currentDirection: 'forward',
+	   leftItemsCount: 0,
+	   rightItemsCount: 0,
+	   performingSetup: true
+	 };
+	 data.itemsContainer.children().removeClass(options.activeClassName);
+   }
+
+   function autoPlay(stop) {
+	 // clear timer
+	 clearTimeout(data.autoPlayTimer);
+	 // as long as no stop command, and autoplay isn't zeroed...
+	 if (!stop && options.autoPlay !== 0) {
+	   // set timer...
+	   data.autoPlayTimer = setTimeout(function () {
+		 // to move the carousl in either direction...
+		 if (options.autoPlay > 0) {
+		   moveOnce('forward');
+		 } else {
+		   moveOnce('backward');
+		 }
+	   }, Math.abs(options.autoPlay));
+	 }
+   }
+
+   function preload(callback) {
+
+	 var $imageElements = data.itemsContainer.find('img'),
+		 totalImages = $imageElements.length,
+		 loadedImages = 0;
+
+	 if (options.preloadImages === false || $imageElements.length === 0) {
+	   callback();
+	   return;
+	 }
+
+	 $imageElements.each(function () {
+	   $(this).bind('load', function () {
+		 // Add to number of images loaded and see if they are all done yet
+		 loadedImages += 1;
+		 if (loadedImages === totalImages) {
+		   // All done, perform callback
+		   callback();
+		   return;
+		 }
+	   });
+	   // May need to manually reset the src to get the load event to fire
+	   // http://stackoverflow.com/questions/7137737/ie9-problems-with-jquery-load-event-not-firing
+	   $(this).attr('src', $(this).attr('src'));
+
+	   // If browser has cached the images, it may not call trigger a load. Detect this and do it ourselves
+	   if (this.complete) {
+		 $(this).trigger('load');
+	   }
+	 });
+   }
+
+   function setOriginalItemDimensions() {
+	 data.itemsContainer.children().each(function () {
+	   if ($(this).data('original_width') == undefined || options.forcedImageWidth > 0) {
+		 $(this).data('original_width', $(this).width());
+	   }
+	   if ($(this).data('original_height') == undefined || options.forcedImageHeight > 0) {
+		 $(this).data('original_height', $(this).height());
+	   }
+	 });
+   }
+
+   function forceImageDimensionsIfEnabled() {
+	 if (options.forcedImageWidth && options.forcedImageHeight) {
+	   data.itemsContainer.children().each(function () {
+		 $(this).width(options.forcedImageWidth);
+		 $(this).height(options.forcedImageHeight);
+	   });
+	 }
+   }
+
+   function preCalculatePositionProperties() {
+	 // The 0 index is the center item in the carousel
+	 var $firstItem = data.itemsContainer.children().eq(0);
+
+	 data.calculations[0] = {
+	   distance: 0,
+	   offset: 0,
+	   opacity: 1
+	 }
+
+	 // Then, for each number of flanking items (plus one more, see below), we
+	 // perform the calcations based on our user options
+	 var horizonOffset = options.horizonOffset;
+	 var separation = options.separation;
+	 for (var i = 1; i <= options.flankingItems + 2; i++) {
+	   if (i > 1) {
+		 horizonOffset *= options.horizonOffsetMultiplier;
+		 separation *= options.separationMultiplier;
+	   }
+	   data.calculations[i] = {
+		 distance: data.calculations[i - 1].distance + separation,
+		 offset: data.calculations[i - 1].offset + horizonOffset,
+		 opacity: data.calculations[i - 1].opacity * options.opacityMultiplier
+	   }
+	 }
+
+	 if (options.edgeFadeEnabled) {
+	   data.calculations[options.flankingItems + 1].opacity = 0;
+	 } else {
+	   data.calculations[options.flankingItems + 1] = {
+		 distance: 0,
+		 offset: 0,
+		 opacity: 0
+	   }
+	 }
+   }
+
+   function setupCarousel() {
+	 // Fill in a data array with jQuery objects of all the images
+	 data.items = data.itemsContainer.children();
+	 for (var i = 0; i < data.totalItems; i++) {
+	   data.items[i] = $(data.items[i]);
+	 }
+
+	 // May need to set the horizon if it was set to auto
+	 if (options.horizon === 0) {
+	   if (options.orientation === 'horizontal') {
+		 options.horizon = data.containerHeight / 2;
+	   } else {
+		 options.horizon = data.containerWidth / 2;
+	   }
+	 }
+
+	 // Default all the items to the center position
+	 data.itemsContainer
+		 .css('position', 'relative')
+		 .children()
+		 .each(function () {
+		   // Figure out where the top and left positions for center should be
+		   var centerPosLeft, centerPosTop;
+		   if (options.orientation === 'horizontal') {
+			 centerPosLeft = (data.containerWidth / 2) - ($(this).data('original_width') / 2);
+			 centerPosTop = options.horizon - ($(this).data('original_height') / 2);
+		   } else {
+			 centerPosLeft = options.horizon - ($(this).data('original_width') / 2);
+			 centerPosTop = (data.containerHeight / 2) - ($(this).data('original_height') / 2);
+		   }
+		   $(this)
+			 // Apply positioning and layering to the images
+			   .css({
+				 'left': centerPosLeft,
+				 'top': centerPosTop,
+				 'visibility': 'visible',
+				 'position': 'absolute',
+				 'z-index': 0,
+				 'opacity': 0
+			   })
+			 // Give each image a data object so it remembers specific data about
+			 // it's original form
+			   .data({
+				 top: centerPosTop,
+				 left: centerPosLeft,
+				 oldPosition: 0,
+				 currentPosition: 0,
+				 depth: 0,
+				 opacity: 0
+			   })
+			 // The image has been setup... Now we can show it
+			   .show();
+		 });
+   }
+
+   function setupStarterRotation() {
+	 options.startingItem = (options.startingItem === 0) ? Math.round(data.totalItems / 2) : options.startingItem;
+
+	 data.rightItemsCount = Math.ceil((data.totalItems - 1) / 2);
+	 data.leftItemsCount = Math.floor((data.totalItems - 1) / 2);
+
+	 // We are in effect rotating the carousel, so we need to set that
+	 data.carouselRotationsLeft = 1;
+
+	 // Center item
+	 moveItem(data.items[options.startingItem - 1], 0);
+	 data.items[options.startingItem - 1].css('opacity', 1);
+
+	 // All the items to the right of center
+	 var itemIndex = options.startingItem - 1;
+	 for (var pos = 1; pos <= data.rightItemsCount; pos++) {
+	   (itemIndex < data.totalItems - 1) ? itemIndex += 1 : itemIndex = 0;
+
+	   data.items[itemIndex].css('opacity', 1);
+	   moveItem(data.items[itemIndex], pos);
+	 }
+
+	 // All items to left of center
+	 var itemIndex = options.startingItem - 1;
+	 for (var pos = -1; pos >= data.leftItemsCount * -1; pos--) {
+	   (itemIndex > 0) ? itemIndex -= 1 : itemIndex = data.totalItems - 1;
+
+	   data.items[itemIndex].css('opacity', 1);
+	   moveItem(data.items[itemIndex], pos);
+	 }
+   }
+
+   function performCalculations($item, newPosition) {
+	 var newDistanceFromCenter = Math.abs(newPosition);
+
+	 // Distance to the center
+	 if (newDistanceFromCenter < options.flankingItems + 1) {
+	   var calculations = data.calculations[newDistanceFromCenter];
+	 } else {
+	   var calculations = data.calculations[options.flankingItems + 1];
+	 }
+
+	 var distanceFactor = Math.pow(options.sizeMultiplier, newDistanceFromCenter)
+	 var newWidth = distanceFactor * $item.data('original_width');
+	 var newHeight = distanceFactor * $item.data('original_height');
+	 var widthDifference = Math.abs($item.width() - newWidth);
+	 var heightDifference = Math.abs($item.height() - newHeight);
+
+	 var newOffset = calculations.offset
+	 var newDistance = calculations.distance;
+	 if (newPosition < 0) {
+	   newDistance *= -1;
+	 }
+
+	 if (options.orientation == 'horizontal') {
+	   var center = data.containerWidth / 2;
+	   var newLeft = center + newDistance - (newWidth / 2);
+	   var newTop = options.horizon - newOffset - (newHeight / 2);
+	 } else {
+	   var center = data.containerHeight / 2;
+	   var newLeft = options.horizon - newOffset - (newWidth / 2);
+	   var newTop = center + newDistance - (newHeight / 2);
+	 }
+
+	 newTop -= heightDifference / 2;
+	 newLeft -= widthDifference / 2;
+
+	 var newOpacity;
+	 if (newPosition === 0) {
+	   newOpacity = 1;
+	 } else {
+	   newOpacity = calculations.opacity;
+	 }
+
+	 // Depth will be reverse distance from center
+	 var newDepth = options.flankingItems + 2 - newDistanceFromCenter;
+
+	 $item.data('width', newWidth);
+	 $item.data('height', newHeight);
+	 $item.data('top', newTop);
+	 $item.data('left', newLeft);
+	 $item.data('oldPosition', $item.data('currentPosition'));
+	 $item.data('depth', newDepth);
+	 $item.data('opacity', newOpacity);
+	 $item.data('distanceFactor', distanceFactor);
+   }
+
+   function moveItem($item, newPosition) {
+	 // Only want to physically move the item if it is within the boundaries
+	 // or in the first position just outside either boundary
+	 if (Math.abs(newPosition) <= options.flankingItems + 1) {
+	   performCalculations($item, newPosition);
+
+	   data.itemsAnimating++;
+
+	   $item
+		   .css('z-index', $item.data().depth)
+		 // Animate the items to their new position values
+		   .animate({
+			 'left': $item.data().left,
+			 'top': $item.data().top,
+			 'opacity': $item.data().opacity
+		   }, data.currentSpeed, options.animationEasing, function () {
+			 // Animation for the item has completed, call method
+			 itemAnimationComplete($item, newPosition);
+		   });
+
+	   TweenMax.to($item, data.currentSpeed / 1000, {
+		 scaleX: $item.data('distanceFactor'),
+		 scaleY: $item.data('distanceFactor'),
+		 ease: options.animationEasing
+	   });
+
+	 } else {
+	   $item.data('currentPosition', newPosition)
+	   // Move the item to the 'hidden' position if hasn't been moved yet
+	   // This is for the intitial setup
+	   if ($item.data('oldPosition') === 0) {
+		 $item
+			 .css({
+			   'left': $item.data().left,
+			   'top': $item.data().top,
+			   'opacity': $item.data().opacity,
+			   'z-index': $item.data().depth
+			 });
+
+		 TweenMax.to($item, 0, {
+		   scaleX: $item.data('distanceFactor'),
+		   scaleY: $item.data('distanceFactor')
+		 });
+	   }
+	 }
+
+   }
+
+   function itemAnimationComplete($item, newPosition) {
+	 data.itemsAnimating--;
+
+	 $item.data('currentPosition', newPosition);
+
+	 // Keep track of what items came and left the center position,
+	 // so we can fire callbacks when all the rotations are completed
+	 if (newPosition === 0) {
+	   data.currentCenterItem = $item;
+	 }
+
+	 // all items have finished their rotation, lets clean up
+	 if (data.itemsAnimating === 0) {
+	   data.carouselRotationsLeft -= 1;
+	   data.currentlyMoving = false;
+
+	   // If there are still rotations left in the queue, rotate the carousel again
+	   // we pass in zero because we don't want to add any additional rotations
+	   if (data.carouselRotationsLeft > 0) {
+		 rotateCarousel(0);
+		 // Otherwise there are no more rotations and...
+	   } else {
+		 // Reset the speed of the carousel to original
+		 data.currentSpeed = options.speed;
+
+		 data.currentCenterItem.addClass(options.activeClassName);
+
+		 if (data.performingSetup === false) {
+		   options.movedToCenter(data.currentCenterItem);
+		   options.movedFromCenter(data.previousCenterItem);
+		 }
+
+		 data.performingSetup = false;
+		 // reset & initate the autoPlay
+		 autoPlay();
+	   }
+	 }
+   }
+
+   function rotateCarousel(rotations) {
+	 // Check to see that a rotation is allowed
+	 if (data.currentlyMoving === false) {
+
+	   // Remove active class from the center item while we rotate
+	   data.currentCenterItem.removeClass(options.activeClassName);
+
+	   data.currentlyMoving = true;
+	   data.itemsAnimating = 0;
+	   data.carouselRotationsLeft += rotations;
+
+	   if (options.quickerForFurther === true) {
+		 // Figure out how fast the carousel should rotate
+		 if (rotations > 1) {
+		   data.currentSpeed = options.speed / rotations;
+		 }
+		 // Assure the speed is above the minimum to avoid weird results
+		 data.currentSpeed = (data.currentSpeed < 100) ? 100 : data.currentSpeed;
+	   }
+
+	   // Iterate thru each item and move it
+	   for (var i = 0; i < data.totalItems; i++) {
+		 var $item = $(data.items[i]);
+		 var currentPosition = $item.data('currentPosition');
+
+		 var newPosition;
+		 if (data.currentDirection == 'forward') {
+		   newPosition = currentPosition - 1;
+		 } else {
+		   newPosition = currentPosition + 1;
+		 }
+		 // We keep both sides as even as possible to allow circular rotation to work.
+		 // We will "wrap" the item arround to the other side by negating its current position
+		 var flankingAllowance = (newPosition > 0) ? data.rightItemsCount : data.leftItemsCount;
+		 if (Math.abs(newPosition) > flankingAllowance) {
+		   newPosition = currentPosition * -1;
+		   // If there's an uneven number of "flanking" items, we need to compenstate for that
+		   // when we have an item switch sides. The right side will always have 1 more in that case
+		   if (data.totalItems % 2 == 0) {
+			 newPosition += 1;
+		   }
+		 }
+
+		 moveItem($item, newPosition);
+	   }
+	 }
+   }
+
+   $(this).children().bind("click", function () {
+	 var itemPosition = $(this).data().currentPosition;
+
+	 if (options.imageNav == false) {
+	   return;
+	 }
+	 // Don't allow hidden items to be clicked
+	 if (Math.abs(itemPosition) >= options.flankingItems + 1) {
+	   return;
+	 }
+	 // Do nothing if the carousel is already moving
+	 if (data.currentlyMoving) {
+	   return;
+	 }
+
+	 data.previousCenterItem = data.currentCenterItem;
+
+	 // Remove autoplay
+	 autoPlay(true);
+	 options.autoPlay = 0;
+
+	 var rotations = Math.abs(itemPosition);
+	 if (itemPosition == 0) {
+	   options.clickedCenter($(this));
+	 } else {
+	   // Fire the 'moving' callbacks
+	   options.movingFromCenter(data.currentCenterItem);
+	   options.movingToCenter($(this));
+	   if (itemPosition < 0) {
+		 data.currentDirection = 'backward';
+		 rotateCarousel(rotations);
+	   } else if (itemPosition > 0) {
+		 data.currentDirection = 'forward';
+		 rotateCarousel(rotations);
+	   }
+	 }
+   });
+
+   function nextItemFromCenter() {
+	 var $next = data.currentCenterItem.next();
+	 if ($next.length <= 0) {
+	   $next = data.currentCenterItem.parent().children().first();
+	 }
+	 return $next;
+   }
+
+   function prevItemFromCenter() {
+	 var $prev = data.currentCenterItem.prev();
+	 if ($prev.length <= 0) {
+	   $prev = data.currentCenterItem.parent().children().last();
+	 }
+	 return $prev;
+   }
+
+   /**
+	* Intiate a move of the carousel in either direction. Takes care of firing
+	* the 'moving' callbacks
+	*/
+   function moveOnce(direction) {
+	 if (data.currentlyMoving === false) {
+	   data.previousCenterItem = data.currentCenterItem;
+
+	   options.movingFromCenter(data.currentCenterItem);
+	   if (direction == 'backward') {
+		 options.movingToCenter(prevItemFromCenter());
+		 data.currentDirection = 'backward';
+	   } else if (direction == 'forward') {
+		 options.movingToCenter(nextItemFromCenter());
+		 data.currentDirection = 'forward';
+	   }
+	 }
+
+	 rotateCarousel(1);
+   }
+
+   /**
+	* Navigation with arrow keys
+	*/
+   $(document).keydown(function (e) {
+	 if (options.keyboardNav) {
+	   // arrow left or up
+	   if ((e.which === 37 && options.orientation == 'horizontal') || (e.which === 38 && options.orientation == 'vertical')) {
+		 autoPlay(true);
+		 options.autoPlay = 0;
+		 moveOnce('backward');
+		 // arrow right or down
+	   } else if ((e.which === 39 && options.orientation == 'horizontal') || (e.which === 40 && options.orientation == 'vertical')) {
+		 autoPlay(true);
+		 options.autoPlay = 0;
+		 moveOnce('forward');
+	   }
+	   // should we override the normal functionality for the arrow keys?
+	   if (options.keyboardNavOverride && (
+			   (options.orientation == 'horizontal' && (e.which === 37 || e.which === 39)) ||
+			   (options.orientation == 'vertical' && (e.which === 38 || e.which === 40))
+		   )) {
+		 e.preventDefault();
+		 return false;
+	   }
+	 }
+   });
+
+   /**
+	* Public API methods
+	*/
+   this.reload = function (newOptions) {
+	 if (typeof newOptions === "object") {
+	   var combineDefaultWith = newOptions;
+	 } else {
+	   var combineDefaultWith = {};
+	 }
+	 options = $.extend({}, $.fn.waterwheelCarousel.defaults, newOptions);
+
+	 initializeCarouselData();
+	 data.itemsContainer.children().hide();
+	 forceImageDimensionsIfEnabled();
+
+	 preload(function () {
+	   setOriginalItemDimensions();
+	   preCalculatePositionProperties();
+	   setupCarousel();
+	   setupStarterRotation();
+	 });
+   }
+
+   this.next = function () {
+	 autoPlay(true);
+	 options.autoPlay = 0;
+
+	 moveOnce('forward');
+   }
+   this.prev = function () {
+	 autoPlay(true);
+	 options.autoPlay = 0;
+
+	 moveOnce('backward');
+   }
+
+   this.reload(startingOptions);
+
+   return this;
+ };
+
+ $.fn.waterwheelCarousel.defaults = {
+   // number tweeks to change apperance
+   startingItem: 1,   // item to place in the center of the carousel. Set to 0 for auto
+   separation: 175, // distance between items in carousel
+   separationMultiplier: 0.6, // multipled by separation distance to increase/decrease distance for each additional item
+   horizonOffset: 0,   // offset each item from the "horizon" by this amount (causes arching)
+   horizonOffsetMultiplier: 1,   // multipled by horizon offset to increase/decrease offset for each additional item
+   sizeMultiplier: 0.7, // determines how drastically the size of each item changes
+   opacityMultiplier: 0.8, // determines how drastically the opacity of each item changes
+   horizon: 0,   // how "far in" the horizontal/vertical horizon should be set from the container wall. 0 for auto
+   flankingItems: 3,   // the number of items visible on either side of the center
+
+   // animation
+   speed: 300,      // speed in milliseconds it will take to rotate from one to the next
+   animationEasing: 'linear', // the easing effect to use when animating
+   quickerForFurther: true,     // set to true to make animations faster when clicking an item that is far away from the center
+   edgeFadeEnabled: false,    // when true, items fade off into nothingness when reaching the edge. false to have them move behind the center image
+
+   // misc
+   linkHandling: 2,                 // 1 to disable all (used for facebox), 2 to disable all but center (to link images out)
+   autoPlay: 0,                 // indicate the speed in milliseconds to wait before autorotating. 0 to turn off. Can be negative
+   orientation: 'horizontal',      // indicate if the carousel should be 'horizontal' or 'vertical'
+   activeClassName: 'carousel-center', // the name of the class given to the current item in the center
+   keyboardNav: false,             // set to true to move the carousel with the arrow keys
+   keyboardNavOverride: true,              // set to true to override the normal functionality of the arrow keys (prevents scrolling)
+   imageNav: true,              // clicking a non-center image will rotate that image to the center
+
+   // preloader
+   preloadImages: true,  // disable/enable the image preloader.
+   forcedImageWidth: 0,     // specify width of all images; otherwise the carousel tries to calculate it
+   forcedImageHeight: 0,     // specify height of all images; otherwise the carousel tries to calculate it
+
+   // callback functions
+   movingToCenter: $.noop, // fired when an item is about to move to the center position
+   movedToCenter: $.noop, // fired when an item has finished moving to the center
+   clickedCenter: $.noop, // fired when the center item has been clicked
+   movingFromCenter: $.noop, // fired when an item is about to leave the center position
+   movedFromCenter: $.noop  // fired when an item has finished moving from the center
+ };
+
+})(jQuery);
+
+
+  /*--water_wheel_carousel--*/
+   var carousel = $("#carousel").waterwheelCarousel({
+		flankingItems: 2,
+		separation:200,
+		sizeMultiplier:0.8,
+		separationMultiplier:0.9,
+		speed:250,
+	});
+	
+	$("#carousel").swipe( {
+	   swipeStatus:function(event, phase, direction, distance)
+	   {
+		   if (phase=="end"){
+			   if(direction == "right") { 
+				   carousel.prev();
+			   }
+			   else if(direction =="left") {
+				   carousel.next();
+			   }else { return false;}
+		   }
+	   },
+	   triggerOnTouchEnd:false,
+	   threshold:100
+   });
+   $('#prev').on('click', function (){
+	   carousel.prev();
+	   return false;
+   });
+   $('#next').on('click', function (){
+	   carousel.next();
+	   return false;
+   });
+   /*--water_wheel carousel_script_end--*/
+   </script>
+</body>
+</html>

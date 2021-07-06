@@ -1,0 +1,471 @@
+*{
+    /* font-family: 'Arnold Boeklin', impact; */
+    font-family: 'Adobe Arabic', impact;
+    transition: all 1.5s ease;
+}
+
+body{
+    background-color: #000;
+}
+
+/*-----nav開始------*/
+
+.nav{
+    width: 1200px;
+    margin: auto;
+    background-color: #aaa;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nav ul li{
+    display: flex;
+    width: 400px;
+}
+
+.nav ul li a{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 20px 30px;
+    transition: all .3s ease-in-out;
+}
+
+.nav ul li .active{
+    background-color: rgb(10, 10, 77);
+}
+
+.nav ul li a:hover{
+    background-color: rgb(10, 10, 77);
+    color: #fff;
+}
+/*-----banner 結束------*/
+
+
+/*-----brand開始------*/
+.wrap-brand{
+    position: relative;
+    align-items: center;
+    width:1160px;
+    height:3000px;
+    margin:auto;
+    background-color: #000;
+}
+
+.brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:1160px;
+
+}
+
+
+.brand-right .brand-item{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction:row;
+}
+
+
+.brand-item .brand-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 4;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.brand-container .brand-item img{
+    width: 100%;
+    height: 350px;
+    background-size: 100%;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
+	box-shadow:15px 15px 50px rgba(0,0,0,0.2);
+    transition: all 1s ease;
+}
+
+
+.brand-container .brand-item:hover img{
+   transform: scale(1.3);
+   border-radius:0%;
+}
+
+
+.brand-item .brand-img .brand-circle{
+    position: relative;
+    width: 100%; 
+    height: 50px;
+    /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; */
+    overflow: hidden;
+}
+
+.brand-circle .ball{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -145px;
+    right: 0;
+    margin: auto;
+    height: 800px;
+    background: linear-gradient(0deg,hsla(0,50%,0%,.4),hsla(0,50%,0%,.2)),url(../images/background/bgc08.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    /* background-attachment: fixed; */
+    animation-name: ball123;
+    animation-iteration-count: infinite;
+    transform: rotate(0deg);
+    animation-duration: 1900s;
+}
+
+
+@keyframes ball123{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(36000deg);}  
+}
+
+
+/* .brand-circle:hover .ball{
+    width: 90%;
+    height: 200px;
+    background-color: #000;
+    border-radius: 80px;
+    transform: translateX(-50%);
+    animation-name:ball;
+    animation-iteration-count: infinite;
+    transition: all 2s;
+    z-index: 3;
+} */
+
+
+.brand-right .brand-item .brand-text{
+    flex:6;
+    background-color: #f5f5f5;
+}
+
+
+.brand-container .story01{
+    position:absolute;
+    top:625px;
+    left:110px;
+    z-index:3;
+    width: 500px;
+}
+
+
+.brand-container .story02{
+    position: absolute;
+    top:1800px;
+    left:110px;
+    z-index: 3;
+    width: 500px;
+}
+
+
+.brand-container .story03{
+    position: absolute;
+    top:180px;
+    right:9px;
+    display: flex;
+}
+
+
+.brand-container .story04{
+    position: absolute;
+    top:44%;
+    right:9px;
+    display: flex;
+}
+
+.brand-container .story05{
+    position: absolute;
+    top: 2550px;
+    right: 9px;
+}
+
+
+.brand-text h3{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+    background-color: #999;
+    white-space: nowrap;
+    text-shadow: 0px 1px 0px #eee, 0px 1px 0px #ddd, 0px 2px 0px #ccc, 0px 2px 0px #aaa, 0px 3px 0px #999, 0px 3px 0px #888, 0px 4px 0px #777;
+    text-align: center;
+}
+
+
+.brand-text p{
+    background-color: #f5f5f5;
+    text-align:left;
+    color: #000;
+    text-shadow: 2px 2px 2px #eee;
+}
+
+.brand-text p::first-letter{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+
+.brand-left .brand-text{
+    transform: translate(0,-60px);
+}
+
+
+.brand-left .planet01{
+    position: absolute;
+    top: 500px;
+    left: 200px;
+}
+
+
+.brand-left .planet02{
+    position: absolute;
+    top: 1400px;
+    left: 200px;
+}
+
+
+.brand-time{
+    width:300px;
+    height: 2000px;
+    margin: auto;
+    position: relative;
+}
+
+
+
+.brand-right{
+    /* width: 450px;
+    position: relative; */
+}
+
+.brand-container .planet03{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+
+
+
+.brand-container .planet04{
+    position: absolute;
+    top: 1000px;
+    right: 200px;
+}
+
+.brand-container .planet05{
+    position: absolute;
+    top: 1900px;
+    right: 200px;
+}
+
+
+.time-bar{
+    width: 100px;
+    height:3100px;
+    position: absolute;
+    top: -37px;
+    left: 100px;
+    margin: auto;
+}
+
+.earth{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    height: 650px;
+    margin: auto;
+}
+
+
+
+.wrap-brand .astronaut{
+    position: absolute;
+    width:100%;
+    height:350px;
+    position: absolute;
+    /* top:-17px; */
+    top: 0;
+    right:180px;
+    animation-name:astronaut;
+    animation-duration:2.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes astronaut{
+    0%{ top:-17px;}
+    50%{top:-10px;}
+    100%{top:-17px;} 
+
+}
+/*-----brand結束------*/
+
+/* ---RWD 開始---*/
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .wrap-brand {
+        width:100%;
+        height: 3250px;
+    }
+    
+    .brand{
+        width: 100%;
+    }
+
+    .brand-right .brand-item {
+        width: 100%;
+    }
+
+
+    .brand-container .story03 {
+        position: absolute;
+        top: 12%;
+    }
+
+    .brand-container .story01 {
+        position: absolute;
+        top: 27%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 70%;
+    }
+
+    
+    .brand-container .story02 {
+        position: absolute;
+        top: 63%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 70%;
+    }
+
+
+    .brand-container .story04{
+        position: absolute;
+        top:48%;
+    }
+
+    .brand-container .story05 {
+        position: absolute;
+        top:84%;
+    }
+
+    .time-bar {
+        width: 100px;
+        height: 3350px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .wrap-brand {
+        width:100%;
+        height:3900px;
+    }
+
+    .wrap-brand .astronaut {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .brand{
+        width: 100%;
+    }
+
+    .brand-item .brand-img {
+        flex: initial;
+    }
+    
+
+
+    .brand-right .brand-item {
+        width: 100%;
+        height: 1005px;
+        flex-direction: column;
+    }
+
+    .brand-right .brand-item .brand-text {
+       flex:initial;
+       transform: translate(0,-60px);
+    }
+
+    .brand-container .story03 {
+        position: absolute;
+        top: 400px;
+    }
+
+    .brand-container .story01 {
+        position: absolute;
+        top: 1150px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width:100%;
+    }
+
+    
+    .brand-container .story02 {
+        position: absolute;
+        top: 2560px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width:100%;
+    }
+
+
+    .brand-container .story04{
+        position: absolute;
+        top: 1840px;
+    }
+
+    .brand-container .story05 {
+        position: absolute;
+        top: 3250px;
+    }
+
+    .time-bar {
+        width: 100px;
+        height:4000px;
+    }
+
+    .brand-text h2 {
+    white-space: initial;
+    }
+
+}
+
+/* 
+@media screen and (min-width:375px) and (max-width:768px) {
+    .banner{
+        height: 280px;
+        background-position-y: -42px;
+    }
+
+    .banner h1 {
+        color: #fff;
+        font-size: 50px;
+    }
+
+} */
+
+/* ---RWD 結束---*/
+
+

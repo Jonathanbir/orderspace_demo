@@ -1,0 +1,502 @@
+*{
+    font-family: 'Arnold Boeklin', impact;;
+}
+
+body{
+    background-color: #000;
+}
+
+/*-----banner 開始------*/
+.wrap{
+    /* display: none; */
+    height:905px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner{
+    position: relative;
+    background: linear-gradient(0deg,hsla(0,50%,0%,.4),hsla(0,50%,0%,.2)),url('../images/background/bgc-common.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+
+
+.banner i{
+    position: absolute;
+    bottom:20px;
+    font-size:65px;
+    color: #fff;
+    opacity: .8;
+    animation-name:arrow;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+}
+
+.banner h1{
+    font-size: 61px;
+}
+
+/* @keyframes arrow{
+    0%{ opacity:1; bottom:20px;}
+    20%{opacity:.6;bottom:30px;}
+    40%{ opacity:.5;bottom:20px;}
+    60%{opacity:.5;bottom:30px;}
+    80%{opacity:.6;bottom:20px;}
+    100%{opacity:1;bottom:30px;} 
+
+} */
+
+
+/*-----banner 開始------*/
+
+
+/*-----nav開始------*/
+
+
+.nav{
+    width: 1200px;
+    margin: auto;
+    background-color: #aaa;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.nav ul li{
+    display: flex;
+    width: 400px;
+}
+
+.nav ul li a{
+    font-family: 'Lato','Noto Sans','Microsoft JhengHei', sans-serif;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    transition: all .3s ease-in-out;
+}
+
+
+.nav ul li .active{
+    background-color: rgb(10, 10, 77);
+}
+
+.nav ul li a:hover{
+    background-color: rgb(10, 10, 77);
+    color: #fff;
+}
+
+.active{
+    background-color: #000;
+    color: #fff !important;
+}
+/*-----banner 結束------*/
+
+
+
+/*-----product開始------*/
+.wrap-product{
+    width: 100%;
+    /* height:880px; */
+}
+
+
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1200px;
+    /* height:880px; */
+    margin:auto;
+    background-color: #f5f5f5;
+}
+
+.side-bar{
+    flex:15%;
+    height: 100%;
+    position: relative;
+    top: -429px;
+}
+
+.side-bar ul li{
+    text-align: center;
+    border: 1px solid #000;
+} 
+
+.side-bar ul li a{
+    font-family: 'Lato','Noto Sans','Microsoft JhengHei', sans-serif;
+    display: block;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000; 
+    transition: all .3s ease-in-out;
+}
+
+
+.side-bar ul li:hover a{
+    color: #f5f5f5;  
+    background-color: #000;
+}
+
+
+.goods-container{
+    flex:85%;
+    /* height:880px; */
+    background-color: #000;
+}
+
+.goods-region{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+/*--recommend--*/
+
+.recommend{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    height:340px;
+    background-color: #000;
+}
+
+
+.product-item{
+    position: relative;
+    /* width:200px; */
+    border-radius: 100%;
+    margin: 30px;
+}
+
+
+.product-item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.product-item h4{
+	width:180px;
+	text-align:right;
+	font-size: 20px;
+	color: #fff;
+    background: rgba(99, 0, 255, 1);
+    margin: 20px;
+    text-shadow:0px 0px 0px #666, 0px 0px 0px #555, 0px 0px 23px #555;
+}
+
+.product-item p{
+    width:150px;
+	text-align: center;
+    font-size: 17px;
+    padding: 0;
+	color: rgba(0, 0, 99, 1);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+
+.product-img{
+    position: relative;
+    z-index: 1;
+    width:280px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.photo_link{
+    display: block;
+    width: 100%;
+    height:100%;
+    margin: auto;
+    transition: all 1s;
+}
+
+.photo_link>img{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    transition: all 1s;
+}
+
+.photo_link:hover>img {
+    transform: scale(1.1);
+}
+
+.product-img  .photo_text{
+    position: absolute;
+    top: 182px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, .5); */
+    transition: all .3s ease;
+    margin-top: -183px;
+    transition: all 1s;
+    opacity: 0;
+}
+
+/* 
+.product-img  .photo_text span{
+    font-size: 30px;
+    border:1px solid #fff;
+    border-radius: 4px;
+    padding:0px 15px;
+}
+ */
+
+.product-img:hover>.photo_link >.photo_text{
+    opacity: 0.7;  
+}
+
+.product-img  .photo_text h2{
+    font-size:15px;
+    padding: 6px 0;
+}
+
+
+.product-img  .photo_text p{
+    font-size: 10px;
+    padding: 6px 0;
+}
+
+.product-item .product-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    z-index:1;
+    bottom:-200px;
+    width: 100%;
+    height: 146px;
+    background-color:rgba(0, 0, 0, 1);
+    transition: all 1s ease-in-out;
+}
+
+
+.product-item:hover .product-text{
+    bottom:0px;
+    background: linear-gradient(0deg,hsla(0,50%,0%,.4),hsla(0,50%,0%,.2)),url('../images/shop/background/02.jpg');
+}
+
+.product-item .product-text a{
+    width: 100%;
+    font-size:20px;
+    padding:3px 0;
+    background: rgba(99, 0, 255, 1);
+    color: #fff;
+    padding:5px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.product-item .product-text a:hover{
+    background: url('../images/shop/background/01.jpg');
+    transform: scale(1.3);
+    color:  rgb(255, 255, 255); 
+    width: 300px;
+    height: 300px;
+    font-size: 25px;
+    text-shadow: 0px 1px 0px #eee, 0px 1px 0px #ddd, 0px 2px 0px #ccc, 0px 2px 0px #aaa, 0px 3px 0px #999, 0px 3px 0px #888, 0px 4px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 5px 16px #555;
+}
+
+
+.product-item .product-text p{
+    font-size: 10px;
+}
+
+/*--recommend--*/
+
+
+.goods{
+    width: 100%;
+} 
+
+
+.goods-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;;
+    flex:40%; 
+    border: 1px solid #fff;
+}
+
+.goods-img img{
+    border: 1px solid #000;
+}
+
+.goods-img img:nth-child(1){
+    width:100%;
+    height:600px;
+}
+
+.goods-img img:nth-child(2),.goods-img img:nth-child(3),.goods-img img:nth-child(4),.goods-img img:nth-child(5),.goods-img img:nth-child(6){
+    width:100px;
+    height: 100px;
+}
+
+.goods-buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:30%;
+}
+
+
+.goods-buy h2{
+    white-space: nowrap;
+    font-size: 50px;
+    line-height: 40px;
+    /* padding: 50px; */
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.goods-buy h3{
+    white-space: nowrap;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.goods-buy p{
+    padding:10px;
+}
+
+.goods-buy p:nth-of-type(2){
+    text-align: center;
+    text-shadow: 2.5px 1px  #fff;
+    font-size: 25px;
+    padding:20px;
+    margin:20px 0;
+    background-color: #f5f5f5;
+    color:#a0f;
+}
+
+
+.goods .size-box,.goods .amount-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(99, 0, 255, 1);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+  
+}
+
+.goods .size-box span,.goods .amount-box span{
+    display: block;
+    background: rgba(99, 0, 255, 1);
+    color: #fff;
+    width:460px;
+    font-size: 20px;
+    padding: 15px 0;
+    border: 1px solid #f5f5f5;
+}
+
+
+.goods .size-box select{
+    width: 50%;
+    font-size: 25px;
+}
+ 
+
+
+.goods .amount-box select{
+    width: 50%;
+    font-size: 25px;
+}
+
+.goods .buy{
+    display: block;
+    width: 80px;
+    white-space: nowrap;
+    border-radius: 10px;
+    margin: 10px auto;			
+}
+
+.goods .buy:hover{
+    color:#fff;
+    background-color: rgba(255, 27, 60, 0.5);
+}
+
+
+.goods p{	
+    padding: 20px;
+    color: #fff;	
+}
+
+
+.goods a p{
+    width: 180px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius:25px;
+    color: #fff;
+    text-align: center;
+  
+    margin: auto;
+}
+
+.goods a p:hover{
+    color: #fff;
+    background: rgba(255, 27, 60, 0.5);
+    border: 1px solid rgba(255, 27, 60, 0.5);
+}
+
+.wrap-product h3{
+    background-color: #fff;
+    background-color: rgba(99, 0, 255, 1);
+}
+
+h4{
+    width: 100%;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    background-color: rgba(99, 0, 255, 1);
+}
+
+.submit{
+    font-family: 'Arnold Boeklin', impact;
+    text-align: center;
+    margin: 18px auto !important;=
+    transition: all .9s ease;
+
+}
+/*-----product 結束------*/
+
+/*-----space 開始------*/
+.space{
+    height:250px;
+    background: linear-gradient(0deg,hsla(0,50%,0%,.4),hsla(0,50%,0%,.2)),url('../images/background/bgc05.jpg');    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/*-----space 結束------*/

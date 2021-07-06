@@ -1,0 +1,724 @@
+body{
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+    font-size: 108px;
+    font-family: 'Scott',impact;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 1px 0px #eee, 0px 1px 0px #ddd, 0px 2px 0px #ccc, 0px 2px 0px #aaa, 0px 3px 0px #999, 0px 3px 0px #888, 0px 4px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 5px 16px #555;
+}
+
+.news h3{
+    font-family: 'Gloria Hallelujah', cursive;
+    position: absolute;
+    top: 40px;
+    left:35px;
+    margin: auto;
+    font-size: 40px;
+    padding: 5px;
+    color: #fff;
+    text-shadow: 0px 0px 0px #666, 0px 0px 0px #555, 0px 0px 23px #555, 0px 0px 25px #666, 0px 0px 30px #999, 0px 0px 20px #000;
+    /* background-color: #000; */
+}
+
+.news-box{
+    display: none;
+    width: 100%;
+    height: 200px;
+    vertical-align: #000
+}
+/*-----banner 開始------*/
+.banner{
+    background-position: center;
+ 
+}
+
+.banner i{
+    position: absolute;
+    bottom:20px;
+    font-size:65px;
+    color: #fff;
+    opacity: .8;
+    animation-name:arrow;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes arrow{
+    0%{ opacity:1; bottom:20px;}
+    20%{opacity:.6;bottom:30px;}
+    40%{ opacity:.5;bottom:20px;}
+    60%{opacity:.5;bottom:30px;}
+    80%{opacity:.6;bottom:20px;}
+    100%{opacity:1;bottom:30px;} 
+
+} */
+
+/*-----banner 開始------*/
+
+/*-----news 開始------*/
+.news-wrap{
+    width: 100%;
+}
+
+.news{
+    width:100%;
+    margin: auto;
+    background-color: #000;
+}
+
+.news h2{
+    font-size: 30px;
+    line-height: 70px;
+    text-align:left;
+    letter-spacing:2px;
+    width: 70%;
+    font-family: 'Arial', impact;
+    font-weight: bold;
+    color: #fff;
+    transition: .5s;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+}
+
+.news .news-planet h2{
+    text-shadow: 
+                  0px 3px 0px #777,
+                  0px 4px 0px #666,
+                  0px 5px 0px #555,
+                  0px 5px 16px #555;
+}
+
+.news h2:hover {
+    top: 4px;
+    text-shadow: 0px 1px 0px #eee,
+                  0px 1px 0px #ddd,
+                  0px 2px 0px #ccc,
+                  0px 2px 0px #aaa,
+                  0px 3px 0px #999,
+                  0px 3px 0px #888,
+                  0px 4px 0px #777,
+                  0px 4px 0px #666,
+                  0px 5px 0px #555,
+                  0px 5px 16px #555;
+} 
+
+.news .news-planet{
+    width: 100%;
+    height: 132px;
+    transition: all .3s ease-in-out;
+}
+
+/* ---news-planet---*/
+
+/* ---news-planet common--*/
+.news .news-container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:500px;
+    height:500px;
+    left:45%;
+    transition: all .3s ease-in-out;
+    background-repeat: no-repeat;
+    animation:float 1.8s linear 1s infinite alternate;;
+    /* animation:name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+.news .news-container h3{
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing:2px;
+    font-weight: bold;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.news .news-container:hover h3{
+    transform: scale(1.2);
+    top:50px;
+    left: 120px;
+    text-shadow: 0px 1px 0px #eee,
+                0px 1px 0px #ddd,
+                0px 2px 0px #ccc,
+                0px 2px 0px #aaa,
+                0px 3px 0px #999,
+                0px 3px 0px #888,
+                0px 4px 0px #777,
+                0px 4px 0px #666,
+                0px 5px 0px #555,
+                0px 5px 16px #555;
+    color: #000;
+    background-color: #fff;
+} 
+
+.news .news-container p{
+    position: absolute;
+    top:188px;
+    left: 90px;
+    width: 250px;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px #333;
+    color: #f5f5f5;     
+}
+
+.news .news-container:hover p{
+    top: 170px;
+    box-shadow: 0px 3px 20px #fff;
+    transform: scale(1.5);
+}
+
+@keyframes float{
+    0%{ top:984px;}
+    100%{top:1006px;} 
+    }
+
+.news .news-container img{
+    transition: all 1.2s ease-in-out;
+}
+
+.news .news-container:hover img{
+    transform: rotate(359deg);
+}
+
+.pt{
+    cursor: pointer;
+}
+
+/* news-planet01*/
+
+.news .news-planet01{
+    background-size: 69%;
+    background-position:-2px 0;
+    background-repeat: no-repeat;
+    filter: grayscale(100%)
+
+}
+
+.news-planet01{
+    position: relative;
+}
+
+/* .news-planet01::before{
+    content: 'Jordan astronaut';    
+} */
+
+.news-planet01>.p01-img{
+    background: url(../images/news/p01.png) no-repeat;
+    background-size: cover;
+    width: 485px;;
+    height: 137px;
+}
+
+.news .news-container01{
+    top: 1000px;
+    background:url(../images/news/moon.png);                   
+}
+
+
+.news .news-container01 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;                                    
+    animation-name:ball01;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+/* @keyframes ball01{
+    0%{top: 150px;left: 340px;right: -30px;bottom: 0;transform: rotate(0deg)}
+    20%{top: 320px;left: 340px;right: -30px;bottom: 0;}
+    40%{top: 320px;left: 0px;right: -30px;bottom: 0;}
+    60%{top: 0px;left: 0px;right: 0px;bottom: 0;}
+    80%{top: 0px;left: 340px;right: 0px;bottom: 0; }
+    100%{top: 150px;left: 340px;right: -30px;bottom: 0;transform: rotate(-360deg);}   
+
+} */
+
+/* news-planet02*/
+
+.news-planet02{
+    position: relative;
+}
+
+.news-planet02>.p02-img{
+    background: url(../images/news/p02.png) no-repeat;
+    background-size: cover;
+    width:600px;
+    height: 148px;
+}
+
+.news .news-container02{
+    top: 1000px;
+    background:url(../images/news/planets02.png)no-repeat;    
+}
+
+.news .news-container02 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;
+    animation-name:ball02;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+.news .news-container03 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;
+    animation-name:ball03;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+.news .news-container04 img{
+    position: absolute;
+    top: -50px;
+    right: 420px;
+    width: 150px;
+    height: 150px;                                    
+    animation-name: ball04;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+.news .news-container05 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;
+    animation-name:ball05;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+/* news-planet03*/
+
+.news-planet03{
+    position: relative;
+}
+
+.news-planet03>.p03-img{
+    background: url(../images/news/p03.png) no-repeat;
+    background-size: cover;
+    width: 660px;
+    height: 142px;
+}
+
+
+.news .news-container03{
+    top: 1000px;
+    background:url(../images/news/planets03.png);
+}
+
+
+.news .news-container03 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;
+    animation-name:ball03;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+
+.news .news-planet:hover{
+    filter: contrast(200%);
+}
+
+
+/* news-planet04*/
+
+.news-planet04{
+    position: relative;
+}
+
+
+
+.news-planet04>.p04-img{
+    background: url(../images/news/p04.png) no-repeat;
+    background-size: cover;
+    width:691px;
+    height: 131px;
+}
+
+
+.news .news-container04{
+    top: 1000px;
+    background:url(../images/news/planets04.png);
+} 
+
+.news .news-container04 img{
+    position: absolute;
+    top: -50px;
+    right: 420px;
+    width: 150px;
+    height: 150px;                                    
+    animation-name: ball04;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+/* news-planet05*/
+
+.news-planet05{
+    position: relative;
+}
+
+
+.news-planet05>.p05-img{
+    background: url(../images/news/p05.png) no-repeat;
+    background-size: cover;
+    width: 694px;
+    height: 133px;
+}
+
+.news .news-container05{
+    top: 1000px;
+    background:url(../images/news/planets05.png);
+} 
+
+.news .news-container05 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;
+    animation-name:ball05;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+/* news-planet06*/
+
+.news-planet06{
+    position: relative;
+}
+
+.news-planet06>.p06-img{
+    background: url(../images/news/p06.png) no-repeat;
+    background-size: cover;
+    width:691px;
+    height: 138px;
+}
+
+.news .news-container06{
+    top: 1000px;
+    background:url(../images/news/planets06.png) no-repeat;
+} 
+
+
+.news .news-container06 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;
+    animation-name:ball06;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+/* news-planet07*/
+
+.news-planet07{
+    position: relative;
+}
+
+.news-planet07>.p07-img{
+    background: url(../images/news/p07.png) no-repeat;
+    background-size: cover;
+    width:657px;
+    height: 134px;
+}
+
+.news .news-container07{
+    width: 870px;
+    top: 1000px;
+    left: 40%;
+    background:url(../images/news/planets08.png) no-repeat;
+} 
+
+.news .news-container07 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;
+    animation-name:ball07;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+.news .news-container07>h3{
+    left: 37%;
+}
+
+.news .news-container07:hover>h3{
+    left:44% !important;
+}
+
+.news .news-container07>p{
+    left: 38%;
+}
+
+.news .news-container07 img {
+    position: absolute;
+    top: -60px !important;
+    right: 520px !important;
+}
+/* news-planet08*/
+.news-planet08{
+    position: relative;
+}
+
+.news-planet08>.p08-img{
+    background: url(../images/news/p08.png) no-repeat;
+    background-size: cover;
+    width:585px;
+    height: 131px;
+}
+.news .news-container08{
+    width: 870px;
+    top: 1000px;
+    background:url(../images/news/planets07.png) no-repeat;
+} 
+
+.news .news-container08 img{
+    position: absolute;
+    top: 100px;
+    right: 370px;
+    width: 150px;
+    height: 150px;
+    animation-name:ball08;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}
+
+.news .news-container08:hover>h3{
+    left:6% !important;
+}
+/* ---news.js--- */
+.imgIn{
+    opacity: 1;
+    z-index: 98;
+ }
+ .img0{
+     opacity:0;
+ }
+ /* ---news.js--- */
+            
+.news .news-container img{
+    position: absolute;
+    top: -50px;
+    right: 420px;
+    width: 150px;
+    height: 150px;                                    
+    animation-name: ball04;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 75px;
+}          
+
+
+/*-----news 開始------*/
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .news .news-container01{
+        left:55%;
+    }
+    
+    .news .news-container02{
+        left:55%;
+    }
+    
+    .news .news-container03{
+        left:55%;
+    }
+    .news .news-container04{
+        left:55%;
+    }
+    .news .news-container05{
+        left:55%;
+    }
+    .news .news-container06{
+        left:55%;
+    }
+    .news .news-container07 {
+        left: 22%;
+    }
+    .news .news-container08{
+        left:55%;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .news .news-container{
+        display: none;
+    }
+
+    .news .news-planet:hover {
+        filter: none;
+    }
+
+    .news h3 {
+        display: none;
+    }
+
+    .news .news-planet {
+        height: 66px;
+    }
+
+    .news-planet01>.p01-img,.news-planet02>.p02-img,.news-planet03>.p03-img,.news-planet04>.p04-img,
+    .news-planet05>.p05-img,.news-planet06>.p06-img,.news-planet07>.p07-img,.news-planet08>.p08-img{
+        width: 100%;
+        height: 65px;
+        background-size: 100%;
+    }
+
+    .news-box{
+        position: relative;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+
+    .news-box img{
+        border-radius: 50%;
+        position: absolute;
+        top:8%;
+        right:5%;
+        width:80px;
+        height:80px;
+        animation: float03 10s linear 1s infinite alternate;
+    }
+
+    @keyframes float03{
+        0%{ top:4%;right:0%;}
+        20%{top:15%;right:18%;} 
+        40%{top:20%;right:0%;} 
+        60%{top:30%;right:18%;} 
+        100%{top:50%;right:0%;} 
+        }
+
+    .news-box h4{
+        padding-left: 10px;
+        position: initial;
+        color: #fff;
+        text-align:left;
+    }
+
+    .news-box p{
+        width: 300px;
+        margin-top:20px;
+        color: #aaa;
+    }
+}
+
+
+@media screen and (min-width:373px) and (max-width:767px) {
+    .news{
+        width:100%;
+    }
+
+    .banner {
+        background-repeat: no-repeat;
+        /* background-position-y:-42px; */
+    }
+    .news .news-container{
+        display: none;
+    }
+
+    .news .news-planet:hover {
+        filter: none;
+    }
+
+    .news h3 {
+        display: none;
+    }
+
+    .news .news-planet {
+        height: 66px;
+    }
+
+    .news-planet01>.p01-img,.news-planet02>.p02-img,.news-planet03>.p03-img,.news-planet04>.p04-img,
+    .news-planet05>.p05-img,.news-planet06>.p06-img,.news-planet07>.p07-img,.news-planet08>.p08-img{
+        width: 100%;
+        height: 65px;
+        background-size: 100%;
+    }
+
+    .news-box{
+        position: relative;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+
+    .news-box img{
+        border-radius: 50%;
+        position: absolute;
+        top:8%;
+        right:5%;
+        width:80px;
+        height:80px;
+        animation: float02 5s linear 1s infinite alternate;
+    }
+
+    @keyframes float02{
+        0%{ top:4%;right:0%;}
+        20%{top:10%;right:4%;} 
+        40%{top:15%;right:0%;} 
+        60%{top:10%;right:4%;} 
+        100%{top:40%;right:10%;} 
+        }
+
+    .news-box h4{
+        padding-left: 10px;
+        position: initial;
+        color: #fff;
+        text-align:left;
+    }
+
+    .news-box p{
+        width: 300px;
+        margin-top:20px;
+        color: #aaa;
+    }
+    
+}
+

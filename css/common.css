@@ -1,0 +1,1301 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all .2s ease;
+    /* outline: 1px solid #f00; */
+}
+@import url(http://allfont.net/allfont.css?fonts=star-jedi);
+
+
+
+@font-face{
+    font-family:Scott;
+    src: url(../font/Scott.TTF);
+}
+
+@font-face{
+    font-family: "aa";
+    src: 
+    /* url(../font/Starjhol.ttf) format("truetype"); */
+    /* url(../font/star-jedi.ttf) format("truetype"); */
+    url(../font/Starjedi_0.ttf) format("truetype");
+}
+
+
+a{
+    display:inline-block;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+h1{
+    font-family: 'Scott', impact;
+}
+
+h2{
+    /* font-family:aa; */
+    font-family: 'Bungee', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+p{
+    font-family: 'Lato','Noto Sans','Microsoft JhengHei', sans-serif;
+}
+
+h3,h4,span,a{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+p{
+font-size: 15px;
+padding: 10px;
+line-height: 30px;
+}
+
+
+
+img{
+    vertical-align: middle;
+}
+
+.box{
+    font-family: aa;
+}
+
+.navbar ul li a{
+    display: block;
+    font-family:aa;
+    font-size:20px;
+    padding: 0 4px;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.wrap{
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(0deg,hsla(0,50%,0%,.4),hsla(0,50%,0%,.2)),url(../images/background/bgc-common.jpg);
+    background-size: 100%;
+    /* background-position-y: -42px; */
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.banner-index i{
+    position: absolute;
+    bottom:6px;
+    font-size:65px;
+    color: #fff;
+    animation-name:arrow;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.banner i{
+    position: absolute;
+    bottom:6px;
+    font-size:65px;
+    color: #fff;
+    animation-name:arrow;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+    opacity: .8;
+    cursor: pointer;
+}
+
+@keyframes arrow{
+    0%{ opacity:1; bottom:0px;}
+    20%{opacity:.6;bottom:25px;}
+    40%{ opacity:.5;bottom:0px;}
+    60%{opacity:.5;bottom:25px;}
+    80%{opacity:.6;bottom:0px;}
+    100%{opacity:1;bottom:25px;} 
+}
+
+::-webkit-scrollbar {  /* 滾動條整體 */
+    width: 16px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track {  /* 外層軌道 */
+    -webkit-box-shadow: inset 0 0 6px #aaa;
+    border-radius: 10px;
+    background-color: rgb(95, 95, 95);
+}
+
+::-webkit-scrollbar-thumb {  /* 裡面拖動ㄉ */
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #aaa;
+    background-color: #aaa;
+}
+
+/* ----button-----*/
+        /* ----more button-----*/
+        .button{
+            width:auto;
+            margin: auto;
+        }
+
+
+        .btn{
+
+            text-align: center;
+            padding: 10px 40px;
+            margin: auto;
+            color: #000;
+            border: 1px solid #000;
+            background-color: #fff;
+            white-space: nowrap;
+            transition: all .9s ease;
+        }
+
+        .btn-white{
+            color: #000;
+            border: 1px solid #000;
+        }
+         
+        .btn-white:hover{
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: #000;
+            border-radius: 5px;
+        }
+
+        /* ----white button-----*/
+        .btn-white{
+            color: #000;
+            border: 1px solid #000;
+        }
+
+
+        .btn-white:hover{
+            margin: auto;
+            font-size: 20px;
+            color: #fff;
+            border: 1px solid #fff;
+            background-color: #000;
+            border-radius: 5px;
+        }
+
+         /* ----black button-----*/
+        .btn-black{
+            color: #fff;
+            background-color: #000;
+            border: 1px solid #fff;
+            margin: 15px;
+        } 
+
+
+        .btn-black:hover{
+        color: #000;
+        border: 1px solid #000;
+        background-color: #fff;
+        border-radius: 5px;
+        } 
+
+        .btn-width{
+           display: flex;
+        }
+
+        /* ----more button-----*/
+        .right-btn{
+            position: absolute;
+            left:0;
+            width: 50px;
+            height: 50px;
+            color: #aaa;
+            z-index: 3;
+        }
+
+        .square-btn a{
+            position: relative;
+            width: 45px;
+            height: 45px;
+        }
+
+
+        .square-btn a i{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            font-size:23px;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            text-align: center;
+            background-color: #000;
+            border:2px solid #fff;
+            transition: all .8s ease-in-out;
+        }
+
+
+        .square-btn a:hover i{
+            color: #000;
+            background-color: #fff;
+            border:2px solid #000;
+        }
+
+
+
+        .left-btn{
+            position: absolute;
+            right:0;
+            width: 50px;
+            height: 50px;
+            color: #aaa;
+            z-index: 3;
+        }
+
+
+        .left-btn a:hover i{
+            color: #000;
+            background-color: #fff;
+            border:2px solid #000;
+        }
+
+
+        .circle-a{
+            border-radius: 100%;
+        }
+
+        .circle-btn{
+            border-radius: 100%;
+        }
+/* ----button-----*/
+
+/*----登入面板----*/
+#lightBox{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(66,66,66,.6);
+  }
+  #tableLogin{
+    position: absolute;
+    width:400px;
+    top: 0;
+    right: 0;
+    bottom: 25%;
+    left: 0;
+    margin:auto;
+    background-color:#000;
+    border:1px dotted #aaa;
+  }
+
+  #tableLogin  td{
+    color: #fff;
+    padding:2px 2px;
+    height:20px;
+    border-style:none;
+    border-bottom:1px dotted #000;
+  }
+
+  #tableLogin  input{
+    background-color:rgb(5, 233, 214);
+    font-size:16px;
+    padding-left:2px;
+  }
+
+  #btnLogin,#btnLoginCancel{margin-left:5px;padding:2px;} 
+
+  #spanLogin:hover{
+    cursor:pointer;
+    text-decoration:underline;
+  }
+
+  #memName{
+      color: #fff;
+  }
+
+  #spanLogin{
+      color:#fff;
+  }
+/*----登入面板----*/
+
+/* -------手機板 ----------*/
+
+    /*-----navgation 開始------*/
+        .nav-mobile{
+            position: absolute;
+            top:60px;
+            left: -1000%;
+            width:100vw;
+            background-color: rgba(35, 8, 158, 0.9);
+            transition: all .8s ease;
+        }
+
+        
+        .active{
+            left:-19px;
+        }
+        
+
+        .nav-mobile ul {
+            z-index: 5;
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        .nav-mobile ul li a{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            font-family: "aa";
+            font-size:20px;
+            padding: 20px 0;
+            color: #fff;
+            transition: all .5s ease-in-out;
+        }
+
+        .nav-mobile ul li a:hover{
+            color: #8c4eff;
+            text-shadow: 
+            0px 1px 0px #eee, 0px -1px 0px #ddd, 0px 1px 0px #ccc, 0px 2px 0px #aaa, 0px 1px 0px #999;
+            background-color: #fff;
+        }
+
+
+        .navgation{
+            position: fixed;
+            z-index: 99;
+            width: 100%;
+            margin: auto;
+            background-color: #000;
+            box-shadow: 0px 3px 20px #333;
+        }
+
+        .navgation-inner{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+            position: relative;
+            width:90%;
+            margin:auto;
+            padding:5px 0px;
+            transition: all .8s ease;
+        }
+
+        .navgation-inner .logo{
+            width:50px;
+            height:50px;
+        }
+
+
+        .logo img{
+            width:50px;
+            height:50px;
+        }
+
+        .navbar{
+            display:none;
+        }
+
+        .navbar ul li{  
+            display: none;
+        }
+
+   
+
+        .navbar ul li a:hover{
+            color: #8c4eff;
+            text-shadow: 
+            0px 1px 0px #eee, 0px -1px 0px #ddd, 0px 1px 0px #ccc, 0px 2px 0px #aaa, 0px 1px 0px #999
+        }
+
+        .member-bar{
+            display:none;
+        }
+
+
+    /* -----漢堡 開始------*/
+
+        .hamburger{
+            position: relative;
+            left: 0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:40px;
+            height:40px;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid #fff;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        .hamburger.active{
+            background-color:rgb(255,255,255);
+        }
+
+        .line{
+            height:2px;
+            width:30px;
+            background-color: #fff;
+            transition:.8s;
+        }
+
+        .line.active{
+            background-color: #000;
+        }
+
+        .middle{
+            position: absolute;
+        }
+
+        .middle.active{
+            transform: rotate(90deg);
+            background-color: #000;
+            width: 32px;
+            left:10%;
+        }  
+
+
+        .top{
+            position: absolute;
+            top:28%;
+        }
+
+        .top.active{
+            transform: rotate(30deg);
+            background-color: #000;
+            position: absolute;
+            left:10%;
+            top: 47%;
+            width: 34px;
+        } 
+
+
+        .bottom{
+            position: absolute;
+            bottom:28%;
+        }
+
+        .bottom.active{
+            transform: rotate(-30deg);
+            background-color: #000;
+            position: absolute;
+            left:10%;
+            top: 46%;
+            width: 32px;
+        } 
+    /* -----漢堡 結束------*/
+
+    .banner h1{
+        color: #fff;
+    }    
+
+    /*-----footer 開始------*/
+        .footer_wrap{
+            position: relative;
+            width: 100%;
+            background-color: #191919;
+        }
+
+        .footer{
+            width:100%;
+            padding-top: 80px;
+            background-color: #191919;
+            margin: auto;
+        }
+
+
+        .footer .footer_container{
+            display: flex;
+            flex-direction:column;
+            width:90%;
+            margin:auto;
+        }
+
+
+        .footer_container .footer_item h3,.footer_container .footer_item  h6,.footer_container .footer_item p{
+            color: #fff;
+            text-align: center;
+            padding-left: 0;
+            padding:3px;
+        }
+
+        .footer h3{
+            font-family: 'Gloria Hallelujah', cursive;
+        }
+
+        .footer p{
+            font-family: 'Lato','Noto Sans','Microsoft JhengHei', sans-serif;
+        }
+
+        .footer_container .footer_item{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            border: 1px solid #f5f5f5;
+        }
+
+        .footer_container .footer_item img{
+            width: 160px;
+            height: 45px;
+        }
+
+
+        .footer_item .icon_container{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            margin: 15px;
+        }
+
+        .icon_container a{
+            background-color: #f5f5f5;
+            width: 30px;
+            height: 30px; 
+            margin: 0 9px;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 25px;
+            transition: all .3s ease-in-out;
+        }
+
+        .footer_container .footer_item:nth-child(1) .icon_region{
+            transition: all .8s ease-in-out;
+        }
+
+
+        .footer_item .icon_region i{
+        color: #000;
+        font-size: 12px;
+        margin:auto;
+        }
+
+        .footer_container .footer_item:nth-child(1) .icon_region:hover{
+            margin:auto 0;
+        }
+
+
+        .icon_container a:hover{ 
+            background-color:rgba(99, 0, 255, 1);
+            color: #f5f5f5;
+        }
+
+        .icon_container a:hover i{ 
+            color: #f5f5f5;
+        }
+
+
+
+        .footer_container .footer_item h3{
+            font-size: 16px;
+            padding-bottom: 10px;  
+            border: 1px solid #f5f5f5;
+        }
+
+        .footer_container .footer_item:nth-child(2) ul{
+            margin-top: 15px;
+        }
+
+        .footer_container .footer_item:nth-child(2) ul li{
+            padding: 10px;
+            text-align: center;
+        }
+        .footer_container .footer_item:nth-child(2) ul li a{
+            font-size:14px;
+            padding: 10px;
+            color:#000;
+            background-color: #fff;
+            transition: all .5s ease-in-out;
+        }
+
+        .footer_container .footer_item:nth-child(2) ul li a:hover{
+            /* box-sizing: border-box;
+            border:1px solid #fff; */
+            color:#fff;
+            background-color: #000;
+        }
+
+        .footer_container .footer_item:nth-child(3) p{
+            padding: 9px;
+            padding-left: 0;
+        }
+
+
+        .footer_container .footer_item:nth-child(3) ul li{
+            padding: 10px;
+            text-align: center;
+
+        }
+        .footer_container .footer_item:nth-child(3) ul li a{
+            font-size:14px;
+            color:#fff;
+        }
+
+
+        .footer_container .footer_item:nth-child(3) .contact {
+            display: flex;
+        }
+
+
+        .footer_container .footer_item:nth-child(3) .contact i{
+            font-size: 10px;
+            color: #fff;
+        }
+
+
+
+        .footer_container .footer_item:nth-child(3) .contact input{
+            background-color: #fff;
+            width: 100%;
+            height: 25px;
+            margin:auto 0;
+            margin:8px 5px;
+        }
+
+        .footer_container .footer_item:nth-child(3) .contact .icon_item  i{
+            display: flex;
+            color:#fff;
+            font-size: 12px;
+        }
+
+        .footer_container .footer_item:nth-child(3) h4{
+            font-size: 15px;
+            padding: 5px 0;
+            color: #f5f5f5;
+            background-color: rgb(95, 95, 95);
+            text-align:center;
+        }
+
+        .footer_container .footer_item:nth-child(3) textarea{
+            height: 150px;
+            margin:8px 5px 0px 5px;
+            resize: none;
+        }
+
+        .footer_container .footer_item:nth-child(3) a{
+                width: 50px;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                padding: 5px 30px;
+                background-color:rgb(10, 10, 77);
+                color: #fff;
+                font-weight: 100;
+                font-size: 15px;
+        }
+
+
+
+        .footer_container .footer_item:nth-child(4) img{
+            width: 100%;
+            height: 134px;
+        }
+
+
+        .footer_container .footer_item:nth-child(4) p{
+            font-size: 8px;
+            color: #f5f5f5;
+            background-color: rgb(95, 95, 95);
+            border: 1px solid #fff;
+            text-align:left;
+        }
+
+
+
+        .wrap_copy_right{
+            width: 100%;
+            padding: 3px 0;
+            background-color: rgb(46, 46, 46);
+            color: #fff;
+            font-family: 'Arnold Boeklin', impact;  
+            font-size: 15px;
+            font-weight:100;
+            text-align: center;
+        }
+
+    /*-----footer 結束------*/
+
+
+/* --------手機板---------- */
+
+@media screen and (min-width:473px){
+    header{
+        max-width: 960px;
+        background-color: #000;
+    }
+
+    .banner h1{
+        font-size: 45px;
+    }
+
+    .nav-mobile{
+        display:block;
+    }
+
+
+    .navgation{
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        margin: auto;
+        background-color: #000;
+        box-shadow: 0px 3px 20px #333;
+    }
+
+    .navgation-inner{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        width:98%;
+        margin:auto;
+        padding:5px 0px;
+    }
+
+    .navgation-inner .logo{
+        width:50px;
+        height:50px;
+    }
+
+
+    .logo img{
+        width:50px;
+        height:50px;
+    }
+
+    .navbar{
+        display:none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+ 
+    .member-bar{
+        display:none;
+    }
+
+    .banner i{
+        position: absolute;
+        bottom:6px;
+        font-size:65px;
+        color: #fff;
+        animation-name:arrow;
+        animation-duration:2.5s;
+        animation-iteration-count: infinite;
+        opacity: .8;
+    }
+
+    @keyframes arrow{
+        0%{ opacity:1; bottom:0px;}
+        20%{opacity:.6;bottom:25px;}
+        40%{ opacity:.5;bottom:0px;}
+        60%{opacity:.5;bottom:25px;}
+        80%{opacity:.6;bottom:0px;}
+        100%{opacity:1;bottom:25px;} 
+    }
+/*-----footer 開始------*/
+    .footer_wrap{
+        position: relative;
+        width: 100%;
+        background-color: #191919;
+    }
+
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: auto;
+    }
+
+
+    .footer .footer_container{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        width:100%;
+        margin:auto;
+    }
+
+    .footer_container .footer_item img{
+        width: 160px;
+        height: 45px;
+    }
+
+
+    .footer_item .icon_container{
+    margin-top: 15px;
+    }
+
+    .icon_container a{
+        background-color: #f5f5f5;
+        width: 30px;
+        height: 30px; 
+        margin: 0 9px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 25px;
+        transition: all .3s ease-in-out;
+    }
+
+
+    .footer_container .footer_item:nth-child(1) .icon_region{
+        /* margin:5px;
+        margin-left:-3px; */
+        transition: all .8s ease-in-out;
+    }
+
+
+    .footer_item .icon_region i{
+    color: #000;
+    font-size: 12px;
+    margin:auto;
+    }
+
+    .footer_container .footer_item:nth-child(1) .icon_region:hover{
+        margin:auto 0;
+    }
+
+
+    .icon_container a:hover{ 
+        background-color:rgba(99, 0, 255, 1);
+        color: #f5f5f5;
+    }
+
+    .icon_container a:hover i{ 
+        color: #f5f5f5;
+    }
+
+
+
+    .footer_container .footer_item:nth-child(2) ul{
+        margin-top: 15px;
+    }
+
+    .footer_container .footer_item:nth-child(2) ul li{
+        padding: 10px;
+        text-align: center;
+    }
+
+  
+
+    .footer_container .footer_item:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer_container .footer_item:nth-child(3) p{
+        padding: 9px;
+        padding-left: 0;
+    }
+
+    .footer_container .footer_item:nth-child(3) ul li{
+        padding: 10px;
+        text-align: center;
+
+    }
+    .footer_container .footer_item:nth-child(3) ul li a{
+        font-family: 'Arnold Boeklin', impact;
+        font-size:14px;
+        color:#fff;
+    }
+
+    .footer_container .footer_item:nth-child(3) .contact i{
+        font-size: 10px;
+        color: #fff;
+    }
+
+    .footer_container .footer_item:nth-child(3) .contact input{
+        background-color: #fff;
+        width: 100%;
+        height: 25px;
+        margin:auto 0;
+        margin:8px 5px;
+    }
+
+    .footer_container .footer_item:nth-child(3) .contact .icon_item  i{
+        display: flex;
+        color:#fff;
+        font-size: 12px;
+    }
+
+    .footer_container .footer_item:nth-child(3) textarea{
+        height: 150px;
+        margin:8px 5px 0px 5px;
+        border-radius:2px;
+        resize: none;
+    }
+
+
+    .footer_container .footer_item:nth-child(3) a:hover{
+        background-color: rgb(12, 115, 250);
+    }
+
+
+
+    .footer_container .footer_item:nth-child(4) img{
+        width: 100%;
+        height: 134px;
+    }
+
+
+/*-----footer 結束------*/
+}
+
+@media screen and (min-width:375px) and (max-width:768px) {
+    .banner{
+        height: 280px;
+        /* background-position-y: -42px; */
+    }
+
+    .banner h1 {
+        color: #fff;
+        font-size: 50px;
+    }
+
+    .arrow_to_top{
+     display: none;
+    }
+
+}
+
+@media screen and (min-width:768px){
+
+        header{
+            max-width: 960px;
+            background-color: #000;
+        }
+
+        .nav-mobile{
+            display: none;
+        }
+    
+
+        .hamburger{
+            display:none;
+        }
+
+        .navgation{
+            position: fixed;
+            z-index: 99;
+            width: 100%;
+            margin: auto;
+            background-color: #000;
+            box-shadow: 0px 3px 20px #333;
+        }
+
+        .navgation-inner{
+            width:95%;
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+        }
+
+
+
+        .member-bar{
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            width:80px;
+        }
+
+
+
+        .member-bar a i{
+            font-size:13px;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width:30px;
+            height:30px;
+            background-color: #000;
+            border:2px solid #fff;
+            border-radius: 100%;
+            transition: all .3s ease-in-out;
+        }
+
+        .member-bar span i {
+            font-size: 13px;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            transition: all .3s ease-in-out;
+        }
+
+        .member-bar a:hover i{
+            font-size:15px;
+            color: #000;
+            background-color: #fff;
+            border:2px solid #fff;
+        
+        }
+    /*-----navgation 結束------*/
+
+/*-----banner 開始------*/
+
+    /*--- page start---*/
+        .banner-page{
+            height: 800px;
+            background: linear-gradient(0deg,hsla(0,50%,0%,.4),hsla(0,50%,0%,.2)),url('../images/background/bgc-common.jpg');
+            background-repeat: no-repeat;
+        }
+
+
+        .banner i{
+            position: absolute;
+            bottom:20px;
+            font-size:65px;
+            color: #fff;
+            opacity: .8;
+            animation-name:arrow;
+            animation-duration:2.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes arrow{
+            0%{ opacity:1; bottom:0px;}
+            20%{opacity:.6;bottom:25px;}
+            40%{ opacity:.5;bottom:0px;}
+            60%{opacity:.5;bottom:25px;}
+            80%{opacity:.6;bottom:0px;}
+            100%{opacity:1;bottom:25px;} 
+        }
+
+        .banner{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 600px;
+            background-position:center;
+            margin:auto;
+        }
+
+        .banner h1{
+            text-align: center;
+            margin:auto;
+            z-index: 1;
+            font-size: 108px;
+            font-family: 'Scott',impact;
+            padding-bottom:55px;
+            color: #fff; 
+            text-shadow: 0px 1px 0px #eee,
+                            0px 1px 0px #ddd,
+                            0px 2px 0px #ccc,
+                            0px 2px 0px #aaa,
+                            0px 3px 0px #999,
+                            0px 3px 0px #888,
+                            0px 4px 0px #777,
+                            0px 4px 0px #666,
+                            0px 5px 0px #555,
+                            0px 5px 16px #555;
+        }
+   
+        .banner-index h1{
+            text-align: center;
+            margin:auto;
+            z-index: 1;
+            font-size: 108px;
+            font-family: 'Scott',impact;
+            padding-bottom:55px;
+            color: #fff; 
+            text-shadow: 0px 1px 0px #eee,
+                            0px 1px 0px #ddd,
+                            0px 2px 0px #ccc,
+                            0px 2px 0px #aaa,
+                            0px 3px 0px #999,
+                            0px 3px 0px #888,
+                            0px 4px 0px #777,
+                            0px 4px 0px #666,
+                            0px 5px 0px #555,
+                            0px 5px 16px #555;
+        }
+             
+/*----回到top 開始----*/
+
+    .arrow_to_top{
+        opacity: 0;
+        position: fixed;
+        z-index: 20;
+        right: 10px;
+        bottom: 27px;
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        margin-right: 20px;
+        border-radius: 100%;
+        border: 1.5px solid #fff;
+        color: #fff;
+        background-color: #00baff;
+        text-align: center;
+        line-height: 25px;
+        font-size: 17px;
+        cursor: pointer;
+        transition: all .2s ;
+    }
+
+    .arrow_to_top:hover{
+        transform: scale(1.5) rotate(-45deg);
+        color: #00baff;
+        border: 1.5px solid #00baff;
+        background:#fff;
+    }
+
+/*----回到top 結束----*/
+
+    .footer .footer_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width:90%;
+        height: 350px;
+        margin: auto;
+    }
+
+}
+
+/*-----navgation 結束------*/
+
+@media screen and (min-width:1200px){
+
+    .nav-mobile{
+        display: none;
+    }
+
+    /*-----header 開始------*/
+        .hamburger{
+            display: none;
+        }
+
+        .navgation-inner{
+            width: 1000px;
+
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+        }
+
+        .navbar ul li{
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        .member-bar{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            width:80px;
+        }
+
+        .member-bar span i{
+            font-size:13px;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width:30px;
+            height:30px;
+            background-color: #000;
+            border:2px solid #fff;
+            border-radius: 100%;
+            transition: all .3s ease-in-out;
+        }
+
+        .member-bar span:hover i{
+            font-size:15px;
+            color: #000;
+            background-color: #fff;
+            border:2px solid #fff;
+        
+        }
+
+        .member-bar span{
+            border-radius:50%;
+        }
+
+    /*-----header 結束------*/
+
+        .banner i{
+            position: absolute;
+            bottom:6px;
+            font-size:65px;
+            color: #fff;
+            animation-name:arrow;
+            animation-duration:2.5s;
+            animation-iteration-count: infinite;
+            opacity: .8;
+        }
+        
+        @keyframes arrow{
+            0%{ opacity:1; bottom:0px;}
+            20%{opacity:.6;bottom:25px;}
+            40%{ opacity:.5;bottom:0px;}
+            60%{opacity:.5;bottom:25px;}
+            80%{opacity:.6;bottom:0px;}
+            100%{opacity:1;bottom:25px;} 
+        }
+
+    /*-----footer 開始------*/    
+        .footer .footer_container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width:80%;
+            height:350px;
+            margin:auto;
+        }
+    /*-----footer 結束------*/
+}
+
